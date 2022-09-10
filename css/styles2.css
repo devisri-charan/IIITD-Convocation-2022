@@ -6,9 +6,7 @@
 img{
     border-radius: 25px;
 }
-.prof-container
-{
-    
+.prof-container{
     display: flex;
     width: 100%;
     height: fit-content;
