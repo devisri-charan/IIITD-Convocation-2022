@@ -3,19 +3,20 @@
     src: url('fonts/Kohinoor-Light.otf') format('opentype');
 }
 
-.container{
-    display: flex;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
     justify-content: center;
     justify-items: center;
-    flex-wrap: wrap;
-}
+    align-items: center;
+    padding: 0 2rem;
+}  
 
 .card {
-    
     position: relative;
     display: inline-block;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin: 25px auto;
     width: 350px;
     height: 190px;    
     /* height: 450px;           */
