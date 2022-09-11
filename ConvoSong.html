@@ -39,6 +39,7 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/styles2.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/songPlayer.css">
     <!-- <link href="styles/styles3.css" rel="stylesheet"> -->
     <!--counter icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
@@ -91,6 +92,67 @@
         </div>
     </div>
     <!-- Page Header End -->
+
+    <!-- Song Player -->
+    <div class = "song">
+
+        <!--     <h1 align="center">SabzLearn | jS Course</h1> -->
+    
+        <div class="bg-container">
+    
+            <img src="" alt="" id="background">
+    
+        </div>
+    
+        <div class="player-container">
+    
+            <!-- Song -->
+    
+            <div class="img-container">
+    
+                <img src="" alt="" id="cover" class="active">
+    
+            </div>
+    
+            <h2 id="title"></h2>
+    
+            <h3 id="artist"></h3>
+    
+            <audio src=""></audio>
+    
+            <!-- Progress -->
+    
+            <div class="progress-container" id="progress-container">
+    
+                <div class="progress" id="progress"></div>
+    
+                <div class="duration-wrapper">
+    
+                    <span id="current-time"></span>
+    
+                    <span id="duration"></span>
+    
+                </div>
+    
+            </div>
+    
+            <!-- Controls -->
+    
+            <div class="player-controls">
+    
+                <i class="fas fa-backward" id="prev" title="Previous"></i>
+    
+                <i class="fas fa-play main-button" id="play" title="Play"></i>
+    
+                <i class="fas fa-forward" id="next" title="Next"></i>
+    
+            </div>
+    
+        </div>
+    
+        <script type="text/javascript" src="javascript/script1.js"></script>
+    
+    </div>
 
     <!-- Convo Song Start -->
     <div class="video-container">
@@ -188,7 +250,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="js/song.js"></script>
+    <script src="js/songPlayer.js"></script>
 </body>
 
 </html>

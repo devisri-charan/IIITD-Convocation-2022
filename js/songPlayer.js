@@ -24,7 +24,7 @@ const nextBtn = $.getElementById("next")
 const background = $.getElementById("background")
 
 const songs = [
-	{path:"https://open.spotify.com/track/5qtEWwRUX3GKgpWwDQf9SA?si=4da0cc5a90764010",musicName:"Rafti",artist:"Mohsen EbrahimZade",cover:"https://music-fa.com/wp-content/uploads/2022/05/IMG_28052022_204907_450_x_450_pixel.jpg"},
+	{path:"https://dls.music-fa.com/tagdl/1401/Ashvan%20-%20Ghasedak(320).mp3",musicName:"Rafti",artist:"Mohsen EbrahimZade",cover:"https://music-fa.com/wp-content/uploads/2022/05/IMG_28052022_204907_450_x_450_pixel.jpg"},
 	{path:"https://dls.music-fa.com/tagdl/1401/Ashvan%20-%20Ghasedak(320).mp3",musicName:"Ghasedak",artist:"Ashvan",cover:"https://music-fa.com/wp-content/uploads/2022/03/Ashvan-Music-fa.com_.jpg"},
 	{path:"https://dls.music-fa.com/tagdl/1401/Sadegh%20Zeyn%20-%20Leila%20Leila%20(Demo).mp3",musicName:"Leila Leila",artist:"Sadegh Zeyn",cover:"https://music-fa.com/wp-content/uploads/2022/06/Serial-Jadogar-leila-Music-fa.com_.jpg"}
 ]
