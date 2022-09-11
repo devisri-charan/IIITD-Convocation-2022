@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'kohinoor-m';
+    src: url('fonts/Kohinoor-Light.otf') format('opentype');
+}
+
+:root {
+  --main-font: "kohinoor-m", sans-serif;
+  --secondary-font: "kohinoor-m", serif;
+  --grey: #6a6a6a;
+  --dark: #444;
+}
+
+.stories * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  &::selection {
+    background-color: #fffaa3;
+  }
+}
+
+.stories {
+  margin: 30px auto;
+  background-color: transparent;
+  letter-spacing: 0.5px;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* :: card :: */
+.card {
+  max-width: 850px;
+  width: 95%;
+  height: min-content;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 40px;
+
+  &__thumb {
+    overflow: hidden;
+    background-color: var(--grey);
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
+  &__content {
+    position: relative;
+    background-color: white;
+    padding: 45px;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: var(--secondary-font);
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 400;
+
+    &:hover {
+      color: var(--grey);
+    }
+  }
+
+  &__text {
+    font-family: var(--main-font);
+    color: var(--dark);
+    line-height: 25px;
+  }
+
+  &__btn {
+    border: none;
+    background: var(--dark);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:focus-visible,
+    &:focus,
+    &:active {
+      background-color: var(--grey);
+    }
+  }
+}
+
+/* :: utilities :: */
+.animate {
+  transition: all 0.3s ease;
+}
+
+/* :: mediaqueries :: */
+@media (min-width: 680px) {
+  .card {
+    grid-template-columns: auto minmax(100px, 470px) auto;
+    grid-template-rows: repeat(2, 1fr) auto auto;
+
+    &__thumb {
+      max-width: 700px;
+      justify-self: center;
+      grid-area: 1 / 1 / -2 / -1;
+    }
+
+    &__content {
+      grid-area: 3 / 2 / -1 / -2;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    grid-template-columns: auto 70px minmax(100px, 400px);
+    grid-template-rows: repeat(3, auto);
+
+    &:nth-child(even) {
+      grid-template-columns: minmax(100px, 400px) 70px auto;
+    }
+
+    &__thumb {
+      grid-area: 1 / 1 / -1 / 3;
+
+      .card:nth-child(even) & {
+        grid-area: 1 / 2 / -1 / -1;
+      }
+    }
+
+    &__content {
+      grid-area: 2 / 2 / -2 / -1;
+      text-align: left;
+
+      .card:nth-child(even) & {
+        text-align: left;
+        grid-area: 2 / 1 / -2 / 3;
+      }
+    }
+  }
+}
