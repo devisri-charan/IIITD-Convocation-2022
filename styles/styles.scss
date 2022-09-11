@@ -1,5 +1,10 @@
 $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
 
+@font-face {
+   font-family: 'kohinoor-m';
+   src: url('fonts/Kohinoor-Light.otf') format('opentype');
+ }
+
 .gallery {
    display:flex;
    flex-direction:row;
@@ -8,7 +13,7 @@ $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
    overflow:hidden;
    height:100vh;
    
-   font-family: 'Roboto', sans-serif;
+   font-family: 'kohinoor-m', sans-serif;
    transition:.25s;
 //    @include dark {
 //       background: #232223;
