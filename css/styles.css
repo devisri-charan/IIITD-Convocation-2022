@@ -3,9 +3,10 @@
     src: url('fonts/Kohinoor-Light.otf') format('opentype');
 }
 
-.cardmain{
+.container{
     display: flex;
     justify-content: center;
+    justify-items: center;
     flex-wrap: wrap;
 }
 
