@@ -60,6 +60,10 @@
     margin: 0;
     left: 0;
   }
+
+  .rules h3{
+    padding-right: 1.5rem;
+  }
 }
 
 .rules h1, h2 {
@@ -78,11 +82,10 @@
 .rules h2 {
   font-size: 36px;
   font-family: "kohinoor-b", sans-serif;
-  line-height: 34px;
-  font-weight: bolder;
   letter-spacing: 1px;
   display: block;
   margin: 0;
+  padding: 2rem 0;
   margin-bottom: 1rem;
   cursor: pointer;
 }
@@ -95,6 +98,7 @@
   display: block;
   margin: 0;
   cursor: pointer;
+  color: #58020D;
 }
 .rules p {
   color: black;
