@@ -3,13 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>11th Convocation IIITD</title>
+    <title>Convocation-IIITD</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+
+    <link rel="stylesheet" href="css/page-loader.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -21,10 +26,8 @@
     <link href="css/styles2.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/styles2.css">
-
-     <!-- Font Awesome -->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-   
+    <!--counter icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
     <style>
         @font-face {
             font-family: 'kohinoor-m';
@@ -34,6 +37,20 @@
 </head>
 
 <body>
+
+    <!-- Page - loader start-->
+    <div class="center page-loader">
+        <div class="ring"></div>
+        <span class="breathing"><img alt="" src="img/loader.png"></span>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $(".center").fadeOut("slow");
+            });
+        </script>
+    </div>
+    <!-- Page - loader end -->
+
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
@@ -76,6 +93,10 @@
     <!-- Page Header End -->
 
     <!-- Main Page Start -->
+    <div class="section">
+        <h1 class="display-4 text-center text-uppercase">Dear First Year Me</h1>
+    </div>
+
     <div class="gallery">
         <div class="options">
             <div class="option active"
@@ -148,33 +169,46 @@
     <!-- Main Page End -->
 
     <!-- Stories Start-->
+    <div class="section">
+        <h1 class="display-4 text-center text-uppercase">Student Stories</h1>
+    </div>
+
     <div class="stories">
         <div class="card">
-            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="https://picsum.photos/800?random=1" /></a></div>
+            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="img/stories.jpg" /></a></div>
             <div class="card__content">
                 <h2 class="card__title animate"><a href="javascript:;">Card Title</a></h2>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn"><i class="fa-solid fa-arrow-right fa-fw"></i></button>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis
+                    eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt
+                    officiis ad repellendus pariatur eligendi tempora praesentium.</p>
+                <button class="card__btn">READ MORE</button>
             </div>
         </div>
         <div class="card">
-            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="https://picsum.photos/800?random=1" /></a></div>
+            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="img/stories.jpg" /></a></div>
             <div class="card__content">
                 <h2 class="card__title animate"><a href="javascript:;">Card Title</a></h2>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn"><i class="fa-solid fa-arrow-right fa-fw"></i></button>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis
+                    eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt
+                    officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn">READ MORE</button>
             </div>
         </div>
         <div class="card">
-            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="https://picsum.photos/800?random=1" /></a></div>
+            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="img/stories.jpg" /></a></div>
             <div class="card__content">
                 <h2 class="card__title animate"><a href="javascript:;">Card Title</a></h2>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn"><i class="fa-solid fa-arrow-right fa-fw"></i></button>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis
+                    eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt
+                    officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn">READ MORE</button>
             </div>
         </div>
         <div class="card">
-            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="https://picsum.photos/800?random=1" /></a></div>
+            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="img/stories.jpg" /></a></div>
             <div class="card__content">
                 <h2 class="card__title animate"><a href="javascript:;">Card Title</a></h2>
-                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn"><i class="fa-solid fa-arrow-right fa-fw"></i></button>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis
+                    eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt
+                    officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn">READ MORE</button>
             </div>
         </div>
     </div>
@@ -240,21 +274,9 @@
         </div>
         <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
             style="border-color: rgba(256, 256, 256, 0.1) !important;">
-            <p class="mb-2 text-white">Copyright &copy; <a> 2021 </a><a class="font-weight-bold" href="https://iiitd.ac.in/"
-                    target="_blank">IIIT-Delhi</a>. All Rights
+            <p class="mb-2 text-white">Copyright &copy; <a> 2021 </a><a class="font-weight-bold"
+                    href="https://iiitd.ac.in/">IIIT-Delhi</a>. All Rights
                 Reserved.</a></p>
-            <p class="m-0 text-white">Designed and Developed by
-                <a class="font-weight-bold" href="https://www.linkedin.com/in/debjit-pramanik-88a837171/" target="_blank">Debjit
-                    Pramanik</a><a>, </a>
-                <a class="font-weight-bold" href="https://www.linkedin.com/in/sibin-k-03066a202/" target="_blank">K Sibin
-                </a><a>, </a>
-                <a class="font-weight-bold" href="https://www.linkedin.com/in/devisricharan/" target="_blank">Devi Sri
-                    Charan</a>
-                <a>and </a>
-                <a class="font-weight-bold" href="https://www.linkedin.com/in/lakavath-vasanth-kumar-b4bb42247/"
-                    target="_blank">Vasanth Kumar
-                </a>
-            </p>
         </div>
     </div>
     <!-- Footer End -->

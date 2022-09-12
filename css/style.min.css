@@ -471,7 +471,7 @@ h6,
 
 @media (max-width: 1200px) {
     .display-1 {
-        font-size: calc(1.925rem + 8.1vw)
+        font-size: calc(1.925rem + 6.5vw)
     }
 }
 
@@ -6458,7 +6458,7 @@ a.close.disabled {
     width: 100%;
     margin-right: -100%;
     backface-visibility: hidden;
-    transition: transform .4s ease-in-out
+    transition: transform .2s ease-in;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -6524,7 +6524,7 @@ a.close.disabled {
     color: #fff;
     text-align: center;
     opacity: .5;
-    transition: opacity 0.15s ease
+    transition: opacity 0.2s ease
 }
 
 @media (prefers-reduced-motion: reduce) {

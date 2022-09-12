@@ -3,13 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>11th Convocation IIITD</title>
+  <title>Convocation-IIITD</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
   <!-- Favicon -->
   <link href="img/favicon.ico" rel="icon">
+
+  <link rel="stylesheet" href="css/page-loader.css">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
   <!-- Libraries Stylesheet -->
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
@@ -30,6 +35,21 @@
 </head>
 
 <body>
+
+  <!-- Page - loader start-->
+  <div class="center page-loader">
+    <div class="ring"></div>
+    <span class="breathing"><img alt="" src="img/loader.png"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).load(function () {
+        $(".center").fadeOut("slow");
+      });
+    </script>
+  </div>
+  <!-- Page - loader end -->
+
+
   <!-- Navbar Start -->
   <div class="container-fluid p-0 nav-bar">
     <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
@@ -83,64 +103,65 @@
           <table class="rwd-table">
             <tbody>
               <tr>
-                <th>S.No. </th>
-                <th>Student Name</th>
-                <th>Roll No.</th>
-                <th>Advisor(s) Name</th>
+                <th>1</th>
+                <th>Supplier Name</th>
+                <th>Invoice Number</th>
+                <th>Invoice Date</th>
               </tr>
               <tr>
-                <td data-th="S.No.">
-                  1
+                <td data-th="Supplier Code">
+                  UPS5005
                 </td>
-                <td data-th="Student Name">
-                  Manoj Gulati
+                <td data-th="Supplier Name">
+                  UPS
                 </td>
-                <td data-th="Roll No.">
-                  PhD1327
+                <td data-th="Invoice Number">
+                  ASDF19218
                 </td>
-                <td data-th="Advisor's Name">
-                  Dr. Amarjeet Singh, and Dr. Shobha Sundar Ram
+                <td data-th="Invoice Date">
+                  06/25/2016
                 </td>
               </tr>
               <tr>
                 <td data-th="Supplier Code">
-                  2
+                  UPS3449
                 </td>
                 <td data-th="Supplier Name">
-                  Aanchal Mongia
+                  UPS South Inc.
                 </td>
                 <td data-th="Invoice Number">
-                  MT15001
+                  ASDF29301
                 </td>
                 <td data-th="Invoice Date">
-                  Dr. Angshul Majumdar
+                  6/24/2016
                 </td>
               </tr>
               <tr>
                 <td data-th="Supplier Code">
-                  3
+                  BOX5599
                 </td>
                 <td data-th="Supplier Name">
-                  Rishabh Kaushal
+                  BOX Pro West
                 </td>
                 <td data-th="Invoice Number">
-                  PhD15008
+                  ASDF43000
                 </td>
                 <td data-th="Invoice Date">
-                  Prof. Ponnurangam Kumaraguru
+                  6/27/2016
                 </td>
               </tr>
               <tr>
                 <td data-th="Supplier Code">
-                  4
+                  PAN9999
                 </td>
                 <td data-th="Supplier Name">
-                  Ankita Shukla </td>
+                  Pan Providers and Co.
+                </td>
                 <td data-th="Invoice Number">
-                  PhD14111
+                  ASDF33433
                 </td>
                 <td data-th="Invoice Date">
-                  Dr. Saket Anand
+                  6/29/2016
                 </td>
               </tr>
             </tbody>
@@ -286,6 +307,7 @@
     </div>
   </div>
 
+
   <!-- Footer Start -->
   <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
     <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
@@ -378,6 +400,7 @@
     $('.tabs-stage div').hide();
     $('.tabs-stage div:first').show();
     $('.tabs-nav li:first').addClass('tab-active');
+
     // Change tab class and display content
     $('.tabs-nav a').on('click', function (event) {
       event.preventDefault();

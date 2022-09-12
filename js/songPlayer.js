@@ -3,6 +3,8 @@ const image = $.getElementById("cover")
 
 const title = $.getElementById("title")
 
+const songName = $.getElementById("song")
+
 const artist = $.getElementById("artist")
 
 const music = $.querySelector("audio")
@@ -21,12 +23,12 @@ const playBtn = $.getElementById("play")
 
 const nextBtn = $.getElementById("next")
 
-const background = $.getElementById("background")
 
 const songs = [
-	{path:"https://dls.music-fa.com/tagdl/1401/Ashvan%20-%20Ghasedak(320).mp3",musicName:"Rafti",artist:"Mohsen EbrahimZade",cover:"https://music-fa.com/wp-content/uploads/2022/05/IMG_28052022_204907_450_x_450_pixel.jpg"},
-	{path:"https://dls.music-fa.com/tagdl/1401/Ashvan%20-%20Ghasedak(320).mp3",musicName:"Ghasedak",artist:"Ashvan",cover:"https://music-fa.com/wp-content/uploads/2022/03/Ashvan-Music-fa.com_.jpg"},
-	{path:"https://dls.music-fa.com/tagdl/1401/Sadegh%20Zeyn%20-%20Leila%20Leila%20(Demo).mp3",musicName:"Leila Leila",artist:"Sadegh Zeyn",cover:"https://music-fa.com/wp-content/uploads/2022/06/Serial-Jadogar-leila-Music-fa.com_.jpg"}
+	{path:"music/Woh-Din-Arijit-Singh-Version.mp3",musicName:"11th Convocation", songName: "Woh Din",artist:"Arijit Singh, Pritam",cover:"img/11thConvo.PNG"},
+	{path:"music/Roobaroo.mp3",musicName:"10th Convocation", songName: "Roobaroo",artist:"A.R. Rahman, Naresh Iyer",cover:"img/10thConvo.PNG"},
+	{path:"music/Hai-Junoon.mp3",musicName:"9th Convocation", songName: "Hai Junoon",artist:"KK, Pritam, and Sandeep Shrivastava",cover:"img/9thConvo.PNG"},
+	{path:"music/Phir-Se-Ud-Chala.mp3",musicName:"8th Convocation", songName: "Phir Se Ud Chala",artist:"A.R.Rahman, Mohit Chauhan",cover:"img/8thConvo.PNG"}
 ]
 
 let isLoading = false
@@ -56,6 +58,7 @@ function playToggle(){
 
 function loadSongs(song){
 	title.innerHTML = song.musicName
+	songName.innerHTML = song.songName
 	artist.innerHTML = song.artist
 	music.src = song.path
 	changeCover(song.cover)
@@ -67,7 +70,6 @@ function changeCover(cover) {
 		image.src = cover
 		image.classList.add("active");
 	},100)
-	background.src = cover
 }
 
 let songIndex = 0

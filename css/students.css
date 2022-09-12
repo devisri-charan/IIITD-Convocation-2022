@@ -52,6 +52,7 @@
 }
 
 .tabs-stage {
+    border: 1px solid #cecfd5;
     border-radius: 0 0 6px 6px;
     border-top: 0;
     clear: both;

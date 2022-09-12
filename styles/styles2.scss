@@ -6,8 +6,6 @@
 :root {
   --main-font: "kohinoor-m", sans-serif;
   --secondary-font: "kohinoor-m", serif;
-  --grey: #6a6a6a;
-  --dark: #444;
 }
 
 .stories * {
@@ -16,12 +14,12 @@
   box-sizing: border-box;
 
   &::selection {
-    background-color: #fffaa3;
+    background-color: #58020D;
   }
 }
 
 .stories {
-  margin: 30px auto;
+  margin: 50px auto;
   background-color: transparent;
   letter-spacing: 0.5px;
 }
@@ -33,7 +31,11 @@ img {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #58020D;
+}
+
+a:hover {
+  color: #be792b;
 }
 
 /* :: card :: */
@@ -48,7 +50,7 @@ a {
 
   &__thumb {
     overflow: hidden;
-    background-color: var(--grey);
+    background-color: #58020D;
 
     &:hover img {
       transform: scale(1.1);
@@ -69,22 +71,22 @@ a {
     font-weight: 400;
 
     &:hover {
-      color: var(--grey);
+      color: #58020D;
     }
   }
 
   &__text {
     font-family: var(--main-font);
-    color: var(--dark);
+    color: black;
     line-height: 25px;
   }
 
   &__btn {
     border: none;
-    background: var(--dark);
+    background:#58020D;
     color: white;
     padding: 10px;
-    font-size: 18px;
+    font-size: 10px;
     position: absolute;
     bottom: -20px;
     left: 50%;
@@ -93,7 +95,7 @@ a {
     &:focus-visible,
     &:focus,
     &:active {
-      background-color: var(--grey);
+      background-color: #58020D;
     }
   }
 }

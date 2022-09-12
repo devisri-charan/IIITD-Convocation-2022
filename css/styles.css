@@ -96,13 +96,13 @@
     opacity: 0.5;
 }
 
-.card .content .details .data {
+/* .card .content .details .data {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
-}
+} */
 
-.card .content .details .data h3 {
+/* .card .content .details .data h3 {
 
     font-family: 'kohinoor-m', sans-serif;
     font-size: 1em;
@@ -116,9 +116,9 @@
     font-size: 0.85em;
     font-weight: 400;
     opacity: 0.5;
-}       
+}        */
 
-.card .content .details .actionBtn {
+/* .card .content .details .actionBtn {
     display: flex;
     justify-content: space-between;
 }
@@ -141,4 +141,4 @@
     color: #999;
     background: #fff;   
 
-}  
+}   */
