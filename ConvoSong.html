@@ -3,14 +3,22 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Convocation-IIITD</title>
+    <title>IIIT Delhi 11th Convocation 2022</title>
+    <meta name="description" content="IIITD Convocation 2022" />
+    <meta name="keywords" content="Convocation 2022" />
+    <meta name="author" content="IIITD" />
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
 
+    <!-- Page Loader -->
     <link rel="stylesheet" href="css/page-loader.css">
 
     <!-- Font Awesome -->
@@ -25,7 +33,7 @@
     <!-- <link href="css/styles.css" rel="stylesheet">
     <link href="css/styles2.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/songPlayer.css">
-    
+
     <style>
         @font-face {
             font-family: 'kohinoor-m';
@@ -37,7 +45,7 @@
 <body>
 
     <!-- Page - loader start-->
-    <div class="center page-loader">
+    <!-- <div class="center page-loader">
         <div class="ring"></div>
         <span class="breathing"><img alt="" src="img/loader.png"></span>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -46,7 +54,7 @@
                 $(".center").fadeOut("slow");
             });
         </script>
-    </div>       
+    </div> -->
     <!-- Page - loader end -->
 
     <!-- Navbar Start -->
@@ -91,54 +99,54 @@
     <!-- Page Header End -->
 
     <!-- Song Player -->
-    <div class = "song">    
-    
+    <div class="song">
+
         <div class="player-container">
             <!-- Song -->
             <div class="img-container">
                 <img src="" alt="" id="cover" class="active">
             </div>
-    
+
             <h3 id="title"></h3>
-    
+
             <h2 id="song"></h2>
 
             <h3 id="artist"></h3>
-    
+
             <audio src=""></audio>
-    
+
             <!-- Progress -->
-    
+
             <div class="progress-container" id="progress-container">
-    
+
                 <div class="progress" id="progress"></div>
-    
+
                 <div class="duration-wrapper">
-    
+
                     <span id="current-time"></span>
-    
+
                     <span id="duration"></span>
-    
+
                 </div>
-    
+
             </div>
-    
+
             <!-- Controls -->
-    
+
             <div class="player-controls">
-    
+
                 <i class="fas fa-backward" id="prev" title="Previous"></i>
-    
+
                 <i class="fas fa-play main-button" id="play" title="Play"></i>
-    
+
                 <i class="fas fa-forward" id="next" title="Next"></i>
-    
+
             </div>
-    
+
         </div>
-        
+
     </div>
-    
+
     <!-- Footer Start -->
     <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
         <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
