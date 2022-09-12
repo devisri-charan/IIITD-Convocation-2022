@@ -3,7 +3,7 @@
   src: url('fonts/Kohinoor-Light.otf') format('opentype');
 }
 
-img {
+.about-img {
   border-radius: 25px;
 }
 

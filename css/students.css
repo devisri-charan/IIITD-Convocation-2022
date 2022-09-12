@@ -21,10 +21,12 @@
 .tabs-nav li:first-child a {
     border-right: 0;
     border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 .tabs-nav li:last-child a {
     border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .students a {
@@ -166,6 +168,11 @@
 /* THE END OF THE IMPORTANT STUFF */
 
 /* Basic Styling */
+
+.students{
+    display: block;
+    text-align: center;
+}
 
 h1 {
     text-align: center;
