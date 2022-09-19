@@ -1,6 +1,8 @@
 const apiKey = 'pk.eyJ1IjoiYWxmcmVkMjAxNiIsImEiOiJja2RoMHkyd2wwdnZjMnJ0MTJwbnVmeng5In0.E4QbAFjiWLY8k3AFhDtErA';
 
-const mymap = L.map('map').setView([28.546363551502406, 77.2731512073101], 17);
+const mymap = L.map('map',  {
+  scrollWheelZoom: false
+} ).setView([28.546363551502406, 77.2731512073101], 17);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   maxZoom: 18,
@@ -9,6 +11,8 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   zoomOffset: -1,
   accessToken: apiKey
 }).addTo(mymap);
+
+
 
 // Adding Marker
 
