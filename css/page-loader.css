@@ -1,6 +1,7 @@
-.page-loader{
+.page-loader {
     background-color: #58020D;
 }
+
 .breathing {
     font-weight: 500;
     font-size: 45px;
@@ -59,4 +60,14 @@
     width: 100%;
     border-radius: 50%;
     box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+
+/* .hero-image {
+    scale: 1.5;
+} */
+
+@media (max-width: 550px) {
+    .hero-image {
+        scale: .5;
+    }
 }
