@@ -2,7 +2,7 @@ const apiKey = 'pk.eyJ1IjoiYWxmcmVkMjAxNiIsImEiOiJja2RoMHkyd2wwdnZjMnJ0MTJwbnVme
 
 const mymap = L.map('map',  {
   scrollWheelZoom: false
-} ).setView([28.546363551502406, 77.2731512073101], 17);
+} ).setView([28.545751, 77.272683], 17);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   maxZoom: 18,
@@ -12,88 +12,16 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: apiKey
 }).addTo(mymap);
 
-
-
-// Adding Marker
-
-
-
-
-// const marker = L.marker([28.545177883897512, 77.27286506374088] ).addTo(mymap);
-
-// // Add popup message
-// let template = `
-
-// <h3>Lecture Hall Complex</h3>
-// <div style="text-align:center">
-//     <img width="150" height="150"src="lhc.jpeg"/>
-// </div>
-// `
-// marker.bindPopup(template);
-
-// marker.on('mouseover', function (e) {
-//     this.openPopup();
-//   });
-//   marker.on('mouseout', function (e) {
-//     this.closePopup();
-//   });
-//   marker.on('click', function (e) {
-//     this.openPopup();
-//     //disable mouseout behavior here?
-//   });
-
-
-
-// L.marker([51.5, -0.09], {icon: greenIcon}).addTo(map);
-
-// canteen
-
-
-var greenIconcanteen = L.icon({
-  iconUrl: 'img/canteenillu.png',
-  // shadowUrl: 'leaf-shadow.png',
-
-  iconSize: [200, 200], // size of the icon
-  // iconSize:     [150, 150], // size of the icon
-  // shadowSize:   [50, 64], // size of the shadow
-  iconAnchor: [80, 120], // point of the icon which will correspond to marker's location
-  // shadowAnchor: [4, 62],  // the same for the shadow
-  popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
-});
-
-const lhc22 = L.marker([28.546228807001228, 77.27330796689755], { icon: greenIconcanteen }).addTo(mymap);
-
-// Add popup message
-let lhc2 = `
-
-<h3>canteen</h3>
-<div style="text-align:center">
-    <img width="150" height="150"src="img/dinning-1.JPG"/>
-</div>
-`
-lhc22.bindPopup(lhc2);
-
-
-lhc22.on('mouseover', function (e) {
-  this.openPopup();
-});
-lhc22.on('mouseout', function (e) {
-  this.closePopup();
-});
-lhc22.on('click', function (e) {
-  this.openPopup();
-  //disable mouseout behavior here?
-});
-
+//sports
 
 var greenIconsport = L.icon({
-  iconUrl: 'img/sportsill.png',
+  iconUrl: 'img/sports_3dicon.png',
   // shadowUrl: 'leaf-shadow.png',
 
-  iconSize: [200, 200], // size of the icon
+  iconSize: [124, 90], // size of the icon
   // iconSize:     [150, 150], // size of the icon
   // shadowSize:   [50, 64], // size of the shadow
-  iconAnchor: [80, 100], // point of the icon which will correspond to marker's location
+  iconAnchor: [30, 50], // point of the icon which will correspond to marker's location
   // shadowAnchor: [4, 62],  // the same for the shadow
   popupAnchor: [10, -46] // point from which the popup should open relative to the iconAnchor
 });
@@ -122,6 +50,8 @@ marker1.on('click', function (e) {
   this.openPopup();
   //disable mouseout behavior here?
 });
+
+//sports end
 
 
 // h2
@@ -170,13 +100,13 @@ marker2.on('click', function (e) {
 
 
 var greenIcon = L.icon({
-  iconUrl: 'img/OldAcadIcon.png',
+  iconUrl: 'img/oldacad_3dicon.png',
   // shadowUrl: 'leaf-shadow.png',
 
-  iconSize: [60, 60], // size of the icon
+  iconSize: [195, 220], // size of the icon
   // iconSize:     [150, 150], // size of the icon
   // shadowSize:   [50, 64], // size of the shadow
-  iconAnchor: [30, 50], // point of the icon which will correspond to marker's location
+  iconAnchor: [85, 105], // point of the icon which will correspond to marker's location
   // shadowAnchor: [4, 62],  // the same for the shadow
   popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
 });
@@ -205,34 +135,6 @@ marker3.on('click', function (e) {
   //disable mouseout behavior here?
 });
 
-
-// pathinfront of old acad
-
-// const marker4 = L.marker([28.544886, 77.272191]).addTo(mymap);
-
-// // Add popup message
-// let template4 = `
-
-// <h3>locate</h3>
-// <div style="text-align:center">
-//     <img width="150" height="150"src="pathfrontofoldaca.jpg"/>
-// </div>
-// `
-// marker4.bindPopup(template4);
-
-
-// marker4.on('mouseover', function (e) {
-//     this.openPopup();
-//   });
-//   marker4.on('mouseout', function (e) {
-//     this.closePopup();
-//   });
-//   marker4.on('click', function (e) {
-//     this.openPopup();
-//     //disable mouseout behavior here?
-//   });
-
-// recidensy
 
 
 var greenIconresi = L.icon({
@@ -272,56 +174,138 @@ marker5.on('click', function (e) {
   //disable mouseout behavior here?
 });
 
-// rnd
+// // rnd
 
 
-var greenIcon1 = L.icon({
-  iconUrl: 'img/rndillu.png',
+// var greenIcon1 = L.icon({
+//   iconUrl: 'img/rndillu.png',
+//   // shadowUrl: 'leaf-shadow.png',
+
+//   iconSize: [200, 200], // size of the icon
+//   // iconSize:     [150, 150], // size of the icon
+//   // shadowSize:   [50, 64], // size of the shadow
+//   iconAnchor: [120, 100], // point of the icon which will correspond to marker's location
+//   // shadowAnchor: [4, 62],  // the same for the shadow
+//   popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
+// });
+
+// const marker6 = L.marker([28.544016182854115, 77.27164268068114], { icon: greenIcon1 }).addTo(mymap);
+
+// // Add popup message
+// let template6 = `
+
+// <h3>R&D</h3>
+// <div style="text-align:center">
+//     <img width="150" height="150"src="img/rnd.jpg"/>
+// </div>
+// `
+// marker6.bindPopup(template6);
+
+
+// marker6.on('mouseover', function (e) {
+//   this.openPopup();
+// });
+// marker6.on('mouseout', function (e) {
+//   this.closePopup();
+// });
+// marker6.on('click', function (e) {
+//   this.openPopup();
+//   //disable mouseout behavior here?
+// });
+
+//library
+
+var greenIconlib = L.icon({
+  iconUrl: 'img/library_3dicon.png',
   // shadowUrl: 'leaf-shadow.png',
 
-  iconSize: [200, 200], // size of the icon
+  iconSize: [87.5, 70], // size of the icon
   // iconSize:     [150, 150], // size of the icon
   // shadowSize:   [50, 64], // size of the shadow
-  iconAnchor: [120, 100], // point of the icon which will correspond to marker's location
+  iconAnchor: [50, 20], // point of the icon which will correspond to marker's location
   // shadowAnchor: [4, 62],  // the same for the shadow
   popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
 });
 
-const marker6 = L.marker([28.544016182854115, 77.27164268068114], { icon: greenIcon1 }).addTo(mymap);
+const markerl = L.marker([28.543974621298453, 77.27246179147589], { icon: greenIconlib }).addTo(mymap);
 
 // Add popup message
-let template6 = `
-
-<h3>R&D</h3>
+let templatel = `
+<h3>Library</h3>
 <div style="text-align:center">
-    <img width="150" height="150"src="img/rnd.jpg"/>
+    <img width="150" height="150"src="img/lib.jpg"/>
 </div>
 `
-marker6.bindPopup(template6);
+markerl.bindPopup(templatel);
 
 
-marker6.on('mouseover', function (e) {
+markerl.on('mouseover', function (e) {
   this.openPopup();
 });
-marker6.on('mouseout', function (e) {
+markerl.on('mouseout', function (e) {
   this.closePopup();
 });
-marker6.on('click', function (e) {
+markerl.on('click', function (e) {
   this.openPopup();
   //disable mouseout behavior here?
 });
 
-// capzone
+
+//library end
 
 
-var greenIconcapz = L.icon({
-  iconUrl: 'img/gradcap.png',
+
+//oT
+
+var greenIconot = L.icon({
+  iconUrl: 'img/ot_3dicon.png',
   // shadowUrl: 'leaf-shadow.png',
 
   iconSize: [60, 60], // size of the icon
   // iconSize:     [150, 150], // size of the icon
   // shadowSize:   [50, 64], // size of the shadow
-  iconAnchor: [30, 50], // point of the icon which will correspond to marker's location
+  iconAnchor: [40, 40], // point of the icon which will correspond to marker's location
+  // shadowAnchor: [4, 62],  // the same for the shadow
+  popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+const markerot = L.marker([28.544119, 77.272147], { icon: greenIconot }).addTo(mymap);
+
+// Add popup message
+let templateot = `
+<h3>Library</h3>
+<div style="text-align:center">
+    <img width="150" height="150"src="img/lib.jpg"/>
+</div>
+`
+markerot.bindPopup(templateot);
+
+
+markerot.on('mouseover', function (e) {
+  this.openPopup();
+});
+markerot.on('mouseout', function (e) {
+  this.closePopup();
+});
+markerot.on('click', function (e) {
+  this.openPopup();
+  //disable mouseout behavior here?
+});
+
+
+//OT end
+
+// capzone
+
+
+var greenIconcapz = L.icon({
+  iconUrl: 'img/lhc_3dicon.png',
+  // shadowUrl: 'leaf-shadow.png',
+
+  iconSize: [154, 110], // size of the icon
+  // iconSize:     [150, 150], // size of the icon
+  // shadowSize:   [50, 64], // size of the shadow
+  iconAnchor: [60, 80], // point of the icon which will correspond to marker's location
   // shadowAnchor: [4, 62],  // the same for the shadow
   popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
 });
@@ -355,7 +339,7 @@ markercap.on('click', function (e) {
 
 
 const circle = L.circle([28.545679, 77.272984], {
-  radius: 50,
+  radius: 60,
   color: 'green',
   fillColor: 'red',
   fillOpacity: 0.2
