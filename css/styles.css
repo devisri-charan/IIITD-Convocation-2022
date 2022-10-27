@@ -16,7 +16,7 @@
 .card {
     position: relative;
     display: inline-block;
-    margin: 25px auto;
+    margin: 25px 20px;
     width: 350px;
     height: 190px;    
     /* height: 450px;           */
