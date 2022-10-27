@@ -30,8 +30,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.min.css" rel="stylesheet">
-    <!-- <link href="css/styles.css" rel="stylesheet">
-    <link href="css/styles2.css" rel="stylesheet"> -->
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="css/songPlayer.css">
 
     <style>
@@ -40,6 +39,7 @@
             src: url('fonts/Kohinoor-Light.otf') format('opentype');
         }
     </style>
+
 </head>
 
 <body>
@@ -50,9 +50,11 @@
         <span class="breathing"><img alt="" src="img/loader.png"></span>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script type="text/javascript">
-            $(window).load(function () {
-                $(".center").fadeOut("slow");
-            });
+            $(window).on('load',function () {
+                setTimeout(function(){ // allowing 3 secs to fade out loader
+                $('.page-loader').fadeOut('slow');
+            },3500);
+        });
         </script>
     </div>
     <!-- Page - loader end -->
@@ -216,7 +218,6 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
@@ -226,10 +227,6 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
