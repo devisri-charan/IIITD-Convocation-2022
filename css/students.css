@@ -40,10 +40,6 @@
     text-decoration: none;
 }
 
-/* .students a:hover {
-    color: #fff;
-} */
-
 .tab-active a {
     background: #65152f;
     border-bottom-color: transparent;

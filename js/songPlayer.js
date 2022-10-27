@@ -25,10 +25,10 @@ const nextBtn = $.getElementById("next")
 
 
 const songs = [
-	{path:"music/Woh-Din-Arijit-Singh-Version.mp3",musicName:"11th Convocation", songName: "Woh Din",artist:"Arijit Singh, Pritam",cover:"img/11thConvo.PNG"},
-	{path:"music/Roobaroo.mp3",musicName:"10th Convocation", songName: "Roobaroo",artist:"A.R. Rahman, Naresh Iyer",cover:"img/10thConvo.PNG"},
-	{path:"music/Hai-Junoon.mp3",musicName:"9th Convocation", songName: "Hai Junoon",artist:"KK, Pritam, and Sandeep Shrivastava",cover:"img/9thConvo.PNG"},
-	{path:"music/Phir-Se-Ud-Chala.mp3",musicName:"8th Convocation", songName: "Phir Se Ud Chala",artist:"A.R.Rahman, Mohit Chauhan",cover:"img/8thConvo.PNG"}
+	{path:"music/Woh-Din-Arijit-Singh-Version.mp3",musicName:"11th Convocation", songName: "Woh Din",artist:"Arijit Singh, Pritam",cover:"img/PastConvoSongs/11thConvo.PNG"},
+	{path:"music/Roobaroo.mp3",musicName:"10th Convocation", songName: "Roobaroo",artist:"A.R. Rahman, Naresh Iyer",cover:"img/PastConvoSongs/10thConvo.PNG"},
+	{path:"music/Hai-Junoon.mp3",musicName:"9th Convocation", songName: "Hai Junoon",artist:"KK, Pritam, and Sandeep Shrivastava",cover:"img/PastConvoSongs/9thConvo.PNG"},
+	{path:"music/Phir-Se-Ud-Chala.mp3",musicName:"8th Convocation", songName: "Phir Se Ud Chala",artist:"A.R.Rahman, Mohit Chauhan",cover:"img/PastConvoSongs/8thConvo.PNG"}
 ]
 
 let isLoading = false

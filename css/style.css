@@ -2411,7 +2411,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
+  color: black;
   background-color: #D38D3C;
   border-color: #D38D3C;
 }
@@ -2426,7 +2426,6 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #D38D3C;
   border-color: #D38D3C;
-  box-shadow: 0 0 0 0.2rem rgb(255, 234, 13);
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {

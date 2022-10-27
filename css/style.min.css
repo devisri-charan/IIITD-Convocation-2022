@@ -2714,7 +2714,7 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    color: #fff;
+    color: black;
     background-color: #F1CB07;
     border-color: #F1CB07
 }
@@ -10844,4 +10844,3 @@ h6,
     background-repeat: no-repeat;
     background-size: cover
 }
->>>>>>> c73daffcb8f823a519434ecb5f400ad8d52b9fe0

@@ -26,7 +26,7 @@
 }       
 
 .card:hover{
-    height: 450px;
+    height: 55vh;
 }
 
 .imageBox {
@@ -54,8 +54,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-
+    object-fit:cover;
 }    
 
 .card .content {
@@ -95,8 +94,8 @@
     opacity: 0.5;
 }
 
-@media (min-width: 576px){
-    .card br{
-        display: block;
+@media (max-width: 576px){
+    .card .br{
+        display: none;
     }
 }
