@@ -16,10 +16,9 @@
 .card {
     position: relative;
     display: inline-block;
-    margin: 25px auto;
+    margin: 25px 20px;
     width: 350px;
-    height: 190px;    
-    /* height: 450px;           */
+    height: 27vh;          
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
@@ -94,4 +93,10 @@
     font-size: 0.75em;
     font-weight: 500;
     opacity: 0.5;
+}
+
+@media (min-width: 576px){
+    .card br{
+        display: block;
+    }
 }

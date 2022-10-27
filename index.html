@@ -29,6 +29,8 @@
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/styles2.css" rel="stylesheet">
@@ -161,9 +163,8 @@
                         <div class="contentBx">
                             <h2>Sh. Anil Baijal</h2>
                             <h3>Chancellor's Message</h3>
-                            <a href="#"><span>Read More</span></a>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#staticBackdrop">Read More</button>
                         </div>
-
                     </div>
 
                     <div class="profcard">
@@ -174,11 +175,8 @@
                         <div class="contentBx">
                             <h2>Prof. Gagandeep Kang</h2>
                             <h3>Chief Guest's Message</h3>
-                            <a
-                                href="https://www.flipbookpdf.net/web/site/d43f9dd0da6f3836f9c140fab91ce58baaf7baadFBP23162779.pdf.html">
-                                <span>Read More</span></a>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#staticBackdrop">Read More</button>
                         </div>
-
                     </div>
 
                     <div class="profcard">
@@ -189,13 +187,9 @@
                         <div class="contentBx">
                             <h2>Sh. Kiran Karnik</h2>
                             <h3>Chairman's Message</h3>
-                            <a
-                                href="https://www.flipbookpdf.net/web/site/673019c967b74bfa29990b4e6a09de30763d829bFBP23162779.pdf.html#page/1">
-                                <span>Read More</span></a>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#staticBackdrop">Read More</button>
                         </div>
-
                     </div>
-
 
                     <div class="profcard">
                         <div class="imgBx">
@@ -205,21 +199,35 @@
                         <div class="contentBx">
                             <h2>Prof. Ranjan Bose</h2>
                             <h3>Director's <br> Report</h3>
-                            <a
-                                href="https://www.flipbookpdf.net/web/site/5825ee3385767f99defa14d16ad02296629ddd0aFBP23162779.pdf.html">
-                                <span>Read More</span></a>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#staticBackdrop">Read More</button>
                         </div>
-
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Disclaimer</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  The messsage will be shared on 26th November
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
         </div>
     </div>
     <!-- Messages End -->
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
+    <!-- <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">More</h4>
@@ -280,7 +288,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
     <!--Students Counter Start-->
@@ -390,6 +398,7 @@
             <div class="content">
                 <div class="details">
                     <h2>LAKSHYA A AGRAWAL<br> <span>(2018242)</span></h2>
+                    <br hidden>
                     <h2>Institute Silver Medal In B.Tech CSAM</h2>
                     <h2>All Round Performance Medal In B.Tech CSAM</h2>
                 </div>
@@ -434,6 +443,7 @@
             <div class="content">
                 <div class="details">
                     <h2>RUHMA MEHEK KHAN<br> <span>(2018362)</span></h2>
+                    <br hidden>
                     <h2>Institute Silver Medal In B.Tech CSSS</h2>
                     <h2>All Round Performance Medal In B.Tech CSSS</h2>
                 </div>
