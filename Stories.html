@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>IIIT Delhi 11th Convocation 2022</title>
+    <meta name="description" content="IIITD Convocation 2022" />
+    <meta name="keywords" content="Convocation 2022" />
+    <meta name="author" content="IIITD" />
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <!-- Page Loader -->
+    <link rel="stylesheet" href="css/page-loader.css">
+
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles2.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles2.css">
+    <link rel="stylesheet" href="css/parallaxGallery.css">
+    <!--counter icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <style>
+        @font-face {
+            font-family: 'kohinoor-m';
+            src: url('fonts/Kohinoor-Light.otf') format('opentype');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page - loader start-->
+    <div id="loader" class="loader orange-color">
+        <div class="loader-container">
+            <div class='loader-icon'>
+                <img src="img/loader.png" alt="">
+                <script type="text/javascript">
+                    $(window).load(function () {
+                        $(".center").fadeOut("slow");
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- Page - loader end -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <img alt="" src="img/style1colormid1.png">
+            </a>
+            <button Stype="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="Schedule.html" class="nav-item nav-link">Schedule</a>
+                    <a href="Guidelines.html" class="nav-item nav-link">Guidelines</a>
+                    <a href="StudentCorner.html" class="nav-item nav-link">Student Corner</a>
+                    <a href="Stories.html" class="nav-item nav-link active">Stories</a>
+                    <a href="ConvoSong.html" class="nav-item nav-link">Convo Song</a>
+                    <a href="https://www.flipbookpdf.net/web/site/593a0d5023e74e15c0b902e4cd702ae406d83c0aFBP23162779.pdf.html"
+                        class="nav-item nav-link">Brochure</a>
+                    <a href="https://alumni.iiitd.ac.in/alumni_donations" target="_blank" class="nav-item nav-link">Make
+                        a Gift</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5"
+            style="min-height: 400px">
+            <h1 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase">Stories</h1>
+            <div class="d-inline-flex mb-lg-5">
+                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Stories</p>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Main Page Start -->
+    <div class="section">
+        <h1 class="display-4 text-center text-uppercase">Dear First Year Me</h1>
+    </div>
+
+    <!-- <div class="gallery">
+        <div class="options">
+            <div class="option active"
+                style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-walking"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Blonkisoaz</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option"
+                style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Oretemauw</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option"
+                style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Iteresuselle</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option"
+                style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Idiefe</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+            <div class="option"
+                style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
+                <div class="shadow"></div>
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Inatethi</div>
+                        <div class="sub">Omuke trughte a otufta</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Main Page End -->
+
+
+    <!-- Stories Start-->
+    <div class="section">
+        <h1 class="display-4 text-center text-uppercase">Student Stories</h1>
+    </div>
+
+    <div class="stories">
+        <div class="card">
+            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="img/stories.jpg" /></a></div>
+            <div class="card__content">
+                <h2 class="card__title animate"><a href="javascript:;">Card Title</a></h2>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis
+                    eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt
+                    officiis ad repellendus pariatur eligendi tempora praesentium.</p>
+                <button class="card__btn">READ MORE</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="img/stories.jpg" /></a></div>
+            <div class="card__content">
+                <h2 class="card__title animate"><a href="javascript:;">Card Title</a></h2>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis
+                    eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt
+                    officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn">READ
+                    MORE</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="img/stories.jpg" /></a></div>
+            <div class="card__content">
+                <h2 class="card__title animate"><a href="javascript:;">Card Title</a></h2>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis
+                    eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt
+                    officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn">READ
+                    MORE</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__thumb"><a href="javascript:;"><img class="animate" src="img/stories.jpg" /></a></div>
+            <div class="card__content">
+                <h2 class="card__title animate"><a href="javascript:;">Card Title</a></h2>
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis
+                    eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt
+                    officiis ad repellendus pariatur eligendi tempora praesentium.</p><button class="card__btn">READ
+                    MORE</button>
+            </div>
+        </div>
+    </div>
+    <!-- Stories End -->
+
+    
+    <!-- Parallax Gallery Start -->
+    <div class="pGallery">
+        <div class="external">
+            <div class="horizontal-scroll-wrapper">
+                <div class="img-wrapper slower">
+                    <a href="https://altphotos.com/photo/stylish-parisian-cafe-terrace-279/" target="_blank"
+                        rel="noopener"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/paris-cafe-terrace.jpg"
+                            alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper faster">
+                    <a href="https://altphotos.com/photo/retro-boy-doll-wearing-elegant-clothes-330/" target="_blank"
+                        rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/antiquedollboy.jpg" alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper slower vertical">
+                    <a href="https://altphotos.com/photo/clocks-shop-exposition-window-reflecting-the-streets-277/"
+                        target="_blank" rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/windowshopclock.jpg" alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper slower slower-down">
+                    <a href="https://altphotos.com/photo/swans-and-ducks-swimming-in-a-river-264/" target="_blank"
+                        rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/swanduckriver.jpg" alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper">
+                    <a href="https://altphotos.com/photo/sidewalk-terrace-of-a-blue-facade-cafe-312/" target="_blank"
+                        rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/cafe-terrace.jpg" alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper slower">
+                    <a href="https://altphotos.com/photo/paris-waterfront-at-sunset-1555/" target="_blank" rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/paris-seine-boat.jpg" alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper faster1">
+                    <a href="https://altphotos.com/photo/old-man-leaning-over-the-barrier-looking-at-the-river-265/"
+                        target="_blank" rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/old-man-river.jpg" alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper slower slower2">
+                    <a href="https://altphotos.com/photo/cafe-terrace-with-a-row-of-retro-tables-261/" target="_blank"
+                        rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/cafe-table-street.jpg" alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper">
+                    <a href="https://altphotos.com/photo/street-scene-with-pedestrians-and-dogs-318/" target="_blank"
+                        rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/street-scene-people.jpg" alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper slower">
+                    <a href="https://altphotos.com/photo/tourist-barge-on-the-river-seine-near-notre-dame-266/"
+                        target="_blank" rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/notre-dame-river-boat.jpg" alt="">
+                    </a>
+                </div>
+    
+                <div class="img-wrapper slower last">
+                    <a href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/" target="_blank"
+                        rel="noopener">
+                        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/shop-window-reflection.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!--   <div class="wrapper"> -->
+        
+            <ul id="sb-slider" class="sb-slider">
+              <li>
+                <a href="http://www.flickr.com/photos/strupler/2969141180" target="_blank"><img src="https://tympanus.net/Development/Slicebox/images/1.jpg" alt="image1"/></a>
+                <div class="sb-description">
+                  <h3>Creative Lifesaver</h3>
+                </div>
+              </li>
+              <li>
+                <a href="http://www.flickr.com/photos/strupler/2968268187" target="_blank"><img src="https://tympanus.net/Development/Slicebox/images/2.jpg" alt="image2"/></a>
+                <div class="sb-description">
+                  <h3>Honest Entertainer</h3>
+                </div>
+              </li>
+              <li>
+                <a href="http://www.flickr.com/photos/strupler/2968114825" target="_blank"><img src="https://tympanus.net/Development/Slicebox/images/3.jpg" alt="image1"/></a>
+                <div class="sb-description">
+                  <h3>Brave Astronaut</h3>
+                </div>
+              </li>
+              <li>
+                <a href="http://www.flickr.com/photos/strupler/2968122059" target="_blank"><img src="https://tympanus.net/Development/Slicebox/images/4.jpg" alt="image1"/></a>
+                <div class="sb-description">
+                  <h3>Affectionate Decision Maker</h3>
+                </div>
+              </li>
+              <li>
+                <a href="http://www.flickr.com/photos/strupler/2969119944" target="_blank"><img src="https://tympanus.net/Development/Slicebox/images/5.jpg" alt="image1"/></a>
+                <div class="sb-description">
+                  <h3>Faithful Investor</h3>
+                </div>
+              </li>
+              <li>
+                <a href="http://www.flickr.com/photos/strupler/2968126177" target="_blank"><img src="https://tympanus.net/Development/Slicebox/images/6.jpg" alt="image1"/></a>
+                <div class="sb-description">
+                  <h3>Groundbreaking Artist</h3>
+                </div>
+              </li>
+              <li>
+                <a href="http://www.flickr.com/photos/strupler/2968945158" target="_blank"><img src="https://tympanus.net/Development/Slicebox/images/7.jpg" alt="image1"/></a>
+                <div class="sb-description">
+                  <h3>Selfless Philantropist</h3>
+                </div>
+              </li>
+            </ul>
+        
+            <div id="shadow" class="shadow"></div>
+            
+            <div id="nav-arrows" class="nav-arrows">
+              <a href="#">Next</a>
+              <a href="#">Previous</a>
+        <!--     </div> -->
+            
+          </div>
+        </div>
+    <!-- Parallax Gallery End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>IIITD, Okhla phase III, New Delhi, India</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>011 - 26907419</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@iiitd.ac.in</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank"
+                        href="https://twitter.com/IIITDelhi"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank"
+                        href="https://www.youtube.com/channel/UCKnRN-9ht_uca8nIdhyTAtQ/videos"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank"
+                        href="https://www.linkedin.com/school/iiit-delhi/?originalSubdomain=in"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" target="_blank"
+                        href="https://www.instagram.com/iiit.delhi/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Archives</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation21/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 10</a>
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation20/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 9</a>
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation19/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 8</a>
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation18/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 7</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Gallery Archives</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation21/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 10</a>
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation20/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 9</a>
+                    <a class="text-white mb-2" href="https://photos.app.goo.gl/HKKbAwZisSWiMKdq9"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 8</a>
+                    <a class="text-white mb-2" target="_blank"
+                        href="https://photos.google.com/share/AF1QipO8n14o3cL4A5Mm3U4cjHMlQW2jW684ChVYCtYSIqGVb2bs0xz5Z9NBwI-tc2lLwA?key=V0ZQaWx4SWh3bHhlRUlTdm5tbWNnalZORGRCWVlB"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 7</a>
+                    <a class="text-white mb-2" target="_blank"
+                        href="https://photos.google.com/share/AF1QipPR5dNTzGdIcg8GJ3OyeMz2_MLZUom9Zv1qy4UZCBrIzGoQ9h0DuShWnL1JI17Gkw?key=ZUhYdzNuenM1dlZodzBMQkRQNzZuV2lER2VaN2tB"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 6</a>
+                    <a class="text-white mb-2" target="_blank"
+                        href="https://photos.google.com/share/AF1QipPu5tvYHR17pfs8Jwa0Jh8Ua2KOXk1SfIsYzs0aruBbETe1DnbqlPSusAEZewj55w?key=aWw5YXAzc2duRHFndlNqTXFJRlJjT3VtOEZITnZn"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 5</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
+            style="border-color: rgba(256, 256, 256, 0.1) !important;">
+            <p class="mb-2 text-white">Copyright &copy; 2022 <a class="font-weight-bold" href="https://iiitd.ac.in/"
+                    style="color: #be792b;;">IIIT-Delhi</a>. All Rights
+                Reserved.</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script>
+        $(".option").click(function () {
+            $(".option").removeClass("active");
+            $(this).addClass("active");
+
+        });
+    </script>
+</body>
+
+</html>

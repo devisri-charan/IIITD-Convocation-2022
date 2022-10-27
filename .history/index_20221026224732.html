@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>IIIT Delhi 11th Convocation 2022</title>
+    <meta name="description" content="IIITD Convocation 2022"/>
+    <meta name="keywords" content="Convocation 2022"/>
+    <meta name="author" content="IIITD"/>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+
+    <!-- Page Loader -->
+    <link rel="stylesheet" href="css/page-loader.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles2.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/pastConvocation.css">
+
+    <style>
+        @font-face {
+            font-family: 'kohinoor-m';
+            src: url('fonts/Kohinoor-Light.otf') format('opentype');
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Page - loader start-->
+    <!-- <div class="center page-loader">
+        <div class="ring"></div>
+        <span class="breathing"><img alt="" src="img/loader.png"></span>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <style type="text/css">
+            html, body {
+              overflow: hidden;
+            }
+        </style>
+        <script type="text/javascript">
+            $('html, body').css({
+                'overflow': 'hidden',
+                'height': '100%'
+            })
+            $(window).load(function () {
+                $(".center").fadeOut("slow");
+                $('html, body').css({
+                'overflow': 'auto',
+                'height': 'auto'
+                })
+            });
+            $(document).ready( function() {
+                $('html, body').css({
+                'overflow': 'auto',
+                'height': 'auto'
+                })
+            })
+        </script>
+    </div> -->
+
+    <div id="loader" class="loader orange-color">
+        <div class="loader-container">
+            <div class='loader-icon'>
+                <img src="assets/images/pre-logo1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Page - loader end -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-1 px-5">
+            <a href="https://iiitd.ac.in/" target="_blank" class="navbar-brand">
+                <img alt="" src="img/style1colormid1.png">
+            </a>
+            <button Stype="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="Schedule.html" class="nav-item nav-link">Schedule</a>
+                    <a href="Guidelines.html" class="nav-item nav-link">Guidelines</a>
+                    <a href="StudentCorner.html" class="nav-item nav-link">Student Corner</a>
+                    <a href="Stories.html" class="nav-item nav-link">Stories</a>
+                    <a href="ConvoSong.html" class="nav-item nav-link">Convo Song</a>
+                    <a href="https://www.flipbookpdf.net/web/site/593a0d5023e74e15c0b902e4cd702ae406d83c0aFBP23162779.pdf.html"
+                        class="nav-item nav-link">Brochure</a>
+                    <a href="https://alumni.iiitd.ac.in/alumni_donations" target="_blank" class="nav-item nav-link">Make
+                        a Gift</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="blog-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <img class="img-fluid hero-image w-100" src="/img/Hero.png" alt="Hero Image">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/clg.jpeg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <img class="img-fluid hero-image w-100" src="/img/Hero.png" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#blog-carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#blog-carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h4>
+                <h1 class="display-4">Established in 2008</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Our Story</h1>
+                    <p style="text-align: justify;">Indraprastha Institute of Information Technology, Delhi (IIIT-Delhi)
+                        welcomes you all to the 10th Convocation Virtual Ceremony, an ensemble of graduating students,
+                        family members, and the Institute community to share the enthusiasm, celebrate the
+                        accomplishments, academic excellence and technical virtuosity of our graduating students.</p>
+                    <a href="https://www.iiitd.ac.in/about"
+                        class="btn btn-secondary font-weight-bold py-2 px-4 mt-2">Learn More</a>
+                </div>
+                <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img alt="" class="about-img position-absolute w-100 h-100" src="img/oldacad.jpg"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-4 py-0 py-lg-5">
+                    <h1 class="mb-3">Our Vision</h1>
+                    <p style="text-align: justify;">Our graduates who are entering a new phase of their lives are well
+                        prepared, equipped with the necessary knowledge and skills for their future endeavors, thanks to
+                        research-oriented courses, world-renowned faculty members, credit-bearing internships and
+                        field-study experiences.</p>
+                    <a href="https://www.iiitd.ac.in/about/vision"
+                        class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Messages Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="profbody">
+                <div class="prof-container">
+                    <div class="profcard">
+                        <div class="imgBx">
+                            <img alt="" src="img/image2.jpg">
+                        </div>
+
+                        <div class="contentBx">
+                            <h2>Sh. Anil Baijal</h2>
+                            <h3>Chancellor's Message</h3>
+                            <a href="#"> <span>Read More</span></a>
+                        </div>
+
+                    </div>
+
+                    <div class="profcard">
+                        <div class="imgBx">
+                            <img alt="" src="img/prof.jpg">
+                        </div>
+
+                        <div class="contentBx">
+                            <h2>Prof. Gagandeep Kang</h2>
+                            <h3>Chief Guest's Message</h3>
+                            <a
+                                href="https://www.flipbookpdf.net/web/site/d43f9dd0da6f3836f9c140fab91ce58baaf7baadFBP23162779.pdf.html">
+                                <span>Read More</span></a>
+                        </div>
+
+                    </div>
+
+                    <div class="profcard">
+                        <div class="imgBx">
+                            <img alt="" src="img/chairman.jpg">
+                        </div>
+
+                        <div class="contentBx">
+                            <h2>Sh. Kiran Karnik</h2>
+                            <h3>Chairman's Message</h3>
+                            <a
+                                href="https://www.flipbookpdf.net/web/site/673019c967b74bfa29990b4e6a09de30763d829bFBP23162779.pdf.html#page/1">
+                                <span>Read More</span></a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="profcard">
+                        <div class="imgBx">
+                            <img alt="" src="img/profbose.jpg">
+                        </div>
+
+                        <div class="contentBx">
+                            <h2>Prof. Ranjan Bose</h2>
+                            <h3>Director's <br> Report</h3>
+                            <a
+                                href="https://www.flipbookpdf.net/web/site/5825ee3385767f99defa14d16ad02296629ddd0aFBP23162779.pdf.html">
+                                <span>Read More</span></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Messages End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">More</h4>
+                <h1 class="display-4">Messages</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/prof.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Name</h4>
+                            <i>Designation</i>
+                        </div>
+                    </div>
+                    <p class="m-0">College life, as crazy as it may sound, is an amalgamation of education, career,
+                        friendships, and much more. It is that part of your journey wherein you learn, grow, figure
+                        yourself
+                        out, and while you are trying to understand life, you also plan for your future</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/profbose.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Name</h4>
+                            <i>Designation</i>
+                        </div>
+                    </div>
+                    <p class="m-0">College life, as crazy as it may sound, is an amalgamation of education, career,
+                        friendships, and much more. It is that part of your journey wherein you learn, grow, figure
+                        yourself
+                        out, and while you are trying to understand life, you also plan for your future</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/chairman.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Name</h4>
+                            <i>Designation</i>
+                        </div>
+                    </div>
+                    <p class="m-0">College life, as crazy as it may sound, is an amalgamation of education, career,
+                        friendships, and much more. It is that part of your journey wherein you learn, grow, figure
+                        yourself
+                        out, and while you are trying to understand life, you also plan for your future</p>
+                </div>
+                <div class="testimonial-item">
+                    <div class="d-flex align-items-center mb-3">
+                        <img class="img-fluid" src="img/image2.jpg" alt="">
+                        <div class="ml-3">
+                            <h4>Name</h4>
+                            <i>Designation</i>
+                        </div>
+                    </div>
+                    <p class="m-0">College life, as crazy as it may sound, is an amalgamation of education, career,
+                        friendships, and much more. It is that part of your journey wherein you learn, grow, figure
+                        yourself
+                        out, and while you are trying to understand life, you also plan for your future</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!--Students Counter Start-->
+
+    <!--Students Counter End-->
+
+    <!-- Awardees Start -->
+    <div class="section-title">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Students</h4>
+        <h1 class="display-4">Awardees</h1>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <div class="imageBox">
+                <img alt="" src="img/image.jpg">
+            </div>
+            <div class="content">
+                <div class="details">
+                    <h2>Shubham Thakral<br> <span>(2017193)</span></h2>
+                    <br>
+                    <h2>CHANCELLOR'S GOLD MEDAL</h2>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="imageBox">
+                <img alt="" src="img/image.jpg">
+            </div>
+            <div class="content">
+                <div class="details">
+                    <h2>Shubham Thakral<br> <span>(2017193)</span></h2>
+                    <br>
+                    <h2>CHANCELLOR'S GOLD MEDAL</h2>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="imageBox">
+                <img alt="" src="img/image.jpg">
+            </div>
+            <div class="content">
+                <div class="details">
+                    <h2>Shubham Thakral<br> <span>(2017193)</span></h2>
+                    <br>
+                    <h2>CHANCELLOR'S GOLD MEDAL</h2>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="imageBox">
+                <img alt="" src="img/image.jpg">
+            </div>
+            <div class="content">
+                <div class="details">
+                    <h2>Shubham Thakral<br> <span>(2017193)</span></h2>
+                    <br>
+                    <h2>CHANCELLOR'S GOLD MEDAL</h2>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="imageBox">
+                <img alt="" src="img/image.jpg">
+            </div>
+            <div class="content">
+                <div class="details">
+                    <h2>Shubham Thakral<br> <span>(2017193)</span></h2>
+                    <br>
+                    <h2>CHANCELLOR'S GOLD MEDAL</h2>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="imageBox">
+                <img alt="" src="img/image.jpg">
+            </div>
+            <div class="content">
+                <div class="details">
+                    <h2>Shubham Thakral<br> <span>(2017193)</span></h2>
+                    <br>
+                    <h2>CHANCELLOR'S GOLD MEDAL</h2>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="imageBox">
+                <img alt="" src="img/image.jpg">
+            </div>
+            <div class="content">
+                <div class="details">
+                    <h2>Shubham Thakral<br> <span>(2017193)</span></h2>
+                    <br>
+                    <h2>CHANCELLOR'S GOLD MEDAL</h2>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+            <div class="imageBox">
+                <img alt="" src="img/image.jpg">
+            </div>
+            <div class="content">
+                <div class="details">
+                    <h2>Shubham Thakral<br> <span>(2017193)</span></h2>
+                    <br>
+                    <h2>CHANCELLOR'S GOLD MEDAL</h2>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Awardees End -->
+
+    <!-- Past Convocations -->
+    <div class="section-title">
+        <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Glimpses of</h4>
+        <h1 class="display-4">Past Convocations</h1>
+    </div>
+    <div class="pastConvo">
+        <section class="past-convocation">
+            <div class="owl-carousel custom-carousel owl-theme">
+                <div class="item active" style="background-image: url(img/DSC_0105.jpg);">
+                    <div class="item-desc">
+                        <h3>Convocation 2021</h3>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/IMG_3511.jpg);">
+                    <div class="item-desc">
+                        <h3>Convocation 2020</h3>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/IMG_3178.JPG);">
+                    <div class="item-desc">
+                        <h3>Convocation 2019</h3>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(img/_MG_0169.JPG);">
+                    <div class="item-desc">
+                        <h3>Convocation 2018</h3>
+                    </div>
+                </div>
+                <div class="item"
+                    style="background-image: url(https://ucarecdn.com/77598be3-c67f-40de-83d3-71a0f2f76c56/fortnite.jpg);">
+                    <div class="item-desc">
+                        <h3>Convocation 2017</h3>
+                    </div>
+                </div>
+                <div class="item"
+                    style="background-image: url(https://ucarecdn.com/ed548880-32e4-42af-9d4e-632623903256/farcry5.jpg);">
+                    <div class="item-desc">
+                        <h3>Convocation 2016</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Map start-->
+    <style>
+        #map {
+            height: 500px;
+            width: 90%;
+            margin: 5rem auto;
+        }
+    </style>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/main2.js"></script>
+    <!-- Map End-->
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>IIITD, Okhla phase III, New Delhi, India</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>011 - 26907419</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@iiitd.ac.in</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank" href="https://twitter.com/IIITDelhi"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2"
+                        target="_blank" href="https://www.youtube.com/channel/UCKnRN-9ht_uca8nIdhyTAtQ/videos"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2"
+                        target="_blank" href="https://www.linkedin.com/school/iiit-delhi/?originalSubdomain=in"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-outline-light btn-lg-square"
+                        target="_blank" href="https://www.instagram.com/iiit.delhi/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Archives</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation21/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 10</a>
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation20/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 9</a>
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation19/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 8</a>
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation18/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 7</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-2">
+                <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Gallery Archives</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation21/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 10</a>
+                    <a class="text-white mb-2" target="_blank" href="https://www.iiitd.ac.in/convocation20/"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 9</a>
+                    <a class="text-white mb-2" href="https://photos.app.goo.gl/HKKbAwZisSWiMKdq9"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 8</a>
+                    <a class="text-white mb-2"
+                        target="_blank" href="https://photos.google.com/share/AF1QipO8n14o3cL4A5Mm3U4cjHMlQW2jW684ChVYCtYSIqGVb2bs0xz5Z9NBwI-tc2lLwA?key=V0ZQaWx4SWh3bHhlRUlTdm5tbWNnalZORGRCWVlB"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 7</a>
+                    <a class="text-white mb-2"
+                        target="_blank" href="https://photos.google.com/share/AF1QipPR5dNTzGdIcg8GJ3OyeMz2_MLZUom9Zv1qy4UZCBrIzGoQ9h0DuShWnL1JI17Gkw?key=ZUhYdzNuenM1dlZodzBMQkRQNzZuV2lER2VaN2tB"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 6</a>
+                    <a class="text-white mb-2"
+                        target="_blank" href="https://photos.google.com/share/AF1QipPu5tvYHR17pfs8Jwa0Jh8Ua2KOXk1SfIsYzs0aruBbETe1DnbqlPSusAEZewj55w?key=aWw5YXAzc2duRHFndlNqTXFJRlJjT3VtOEZITnZn"><i
+                            class="fa fa-angle-right mr-2"></i>Convocation 5</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5"
+            style="border-color: rgba(256, 256, 256, 0.1) !important;">
+            <p class="mb-2 text-white">Copyright &copy; <a> 2022 </a><a class="font-weight-bold"
+                    href="https://iiitd.ac.in/">IIIT-Delhi</a>. All Rights
+                Reserved.</a></p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/main3.js"></script>
+    <script>
+        $(".custom-carousel").owlCarousel({
+            autoWidth: true,
+            loop: true
+        });
+        $(document).ready(function () {
+            $(".custom-carousel .item").click(function () {
+                $(".custom-carousel .item").not($(this)).removeClass("active");
+                $(this).toggleClass("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
