@@ -28,18 +28,13 @@
   border: 1px solid gray;
 }
 
-/* Background-color of the odd rows */
-.container tr:nth-child(odd) {
-  background-color: #ffffff;
-}
-
-/* Background-color of the even rows */
-.container tr:nth-child(even) {
-  background-color: #ffffff;
+/* Background-color of the all rows */
+.container tr {
+  background-color: transparent;
 }
 
 .container th {
-  background-image: linear-gradient(#58020d, #1c0608);
+  background-image: linear-gradient(rgba(28, 06, 08, 0.8), rgb(88, 2, 13, 0.9));
 }
 
 .container td:first-child {
@@ -47,14 +42,14 @@
 }
 
 .container tr:hover {
-  background-color: #f5f5f5;
+  background-color: transparent;
   -webkit-box-shadow: 0 6px 6px -6px #0e1119;
   -moz-box-shadow: 0 6px 6px -6px #0e1119;
   box-shadow: 0 6px 6px -6px #0e1119;
 }
 
 .container td:hover {
-  background-color: #f5f5f5;
+  background-color: transparent;
   font-weight: bold;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
   transform: translate3d(6px, -6px, 0);
