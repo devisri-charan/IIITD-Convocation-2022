@@ -1,169 +1,151 @@
-$optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
-
 @font-face {
-   font-family: 'kohinoor-m';
-   src: url('fonts/Kohinoor-Light.otf') format('opentype');
- }
+    font-family: 'kohinoor-m';
+    src: url('fonts/Kohinoor-Light.otf') format('opentype');
+}
 
- .section h1{
-   color: #58020D;
- }
+:root {
+  --main-font: "kohinoor-m", sans-serif;
+  --secondary-font: "kohinoor-m", serif;
+  --selection-bg: black;
+  --grey: #F6D107;
+  --dark: #65152f;
+}
 
-.gallery {
-   display:flex;
-   flex-direction:row;
-   justify-content:center;
-   align-items:center;
-   overflow:hidden;
-   height: 60vh;
-   font-family: 'kohinoor-m', sans-serif;
-   transition:.25s;
+.stories * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
-   .credit {
-      position: absolute;
-      bottom:20px;
-      left:20px;
-      
-      color:inherit;
-   }
-   .options {
-      display:flex;
-      flex-direction:row;
-      align-items:stretch;
-      overflow:hidden;
+  &::selection {
+    background-color: var(--selection-bg);
+  }
+}
 
-      min-width:600px;
-      max-width:900px;
-      width:calc(100% - 100px);
-      
-      height:400px;
-      
-      @for $i from 1 through 4 {
-         @media screen and (max-width:798px) {
-            min-width:600px - $i*80;
-            .option:nth-child(#{6-$i}) {
-               display:none;
-            }
-         }
+.stories {
+  margin-top: 30px;
+  letter-spacing: 0.5px;
+}
+
+.stories img {
+  width: 100%;
+  vertical-align: top;
+  height: fit-content;
+}
+
+.stories a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* :: card1 :: */
+.card1 {
+  max-width: 850px;
+  width: 95%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 40px;
+
+  &__thumb {
+    overflow: hidden;
+    background-color: var(--grey);
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+  }
+
+  &__content {
+    position: relative;
+    background-color: white;
+    padding: 45px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 400;
+
+    &:hover {
+      color: var(--grey);
+    }
+  }
+
+  &__text {
+    color: var(--dark);
+    line-height: 25px;
+  }
+
+  &__btn {
+    border: none;
+    background: var(--dark);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &:hover,
+    &:focus-visible,
+    &:focus,
+    &:active {
+      background-color: var(--grey);
+      color: var(--dark)
+    }
+  }
+}
+
+/* :: utilities :: */
+.animate {
+  transition: all 0.3s ease;
+}
+
+/* :: mediaqueries :: */
+@media (min-width: 680px) {
+  .card1 {
+    grid-template-columns: auto minmax(100px, 470px) auto;
+    grid-template-rows: repeat(2, 1fr) auto auto;
+
+    &__thumb {
+      max-width: 700px;
+      justify-self: center;
+      grid-area: 1 / 1 / -2 / -1;
+    }
+
+    &__content {
+      grid-area: 3 / 2 / -1 / -2;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .card1 {
+    grid-template-columns: auto 70px minmax(100px, 400px);
+    grid-template-rows: repeat(3, auto);
+
+    &:nth-child(even) {
+      grid-template-columns: minmax(100px, 400px) 70px auto;
+    }
+
+    &__thumb {
+      grid-area: 1 / 1 / -1 / 3;
+
+      .card1:nth-child(even) & {
+        grid-area: 1 / 2 / -1 / -1;
       }
-      
-      .option {
-         position: relative;
-         overflow:hidden;
+    }
 
-         min-width:60px;
-         margin:10px;
-         //border:0px solid --defaultColor;
+    &__content {
+      grid-area: 2 / 2 / -2 / -1;
+      text-align: left;
 
-         background:var(--optionBackground, var(--defaultBackground, #E6E9ED));
-         background-size:auto 120%;
-         background-position:center;
-
-         cursor: pointer;
-
-         transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-
-         @for $i from 1 through length($optionDefaultColours) {
-            &:nth-child(#{$i}) {
-               --defaultBackground:#{nth($optionDefaultColours, $i)};
-            }
-         }
-         &.active {
-            flex-grow:10000;
-            transform:scale(1);
-            
-            max-width:600px;
-            margin:0px;
-            border-radius:40px;
-            
-            background-size:auto 100%;
-            .shadow {
-               box-shadow:inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-            }
-            .label {
-               bottom:20px;
-               left:20px;
-               .info >div {
-                  left:0px;
-                  opacity:1;
-               }
-            }
-            /*&:active {
-               transform:scale(0.9);
-            }*/
-         }
-         &:not(.active) {
-            flex-grow:1;
-            
-            border-radius:30px;
-            .shadow {
-               bottom:-40px;
-               box-shadow:inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-            }
-            .label {
-               bottom:10px;
-               left:10px;
-               .info >div {
-                  left:20px;
-                  opacity:0;
-               }
-            }
-         }
-         .shadow {
-            position: absolute;
-            bottom:0px;
-            left:0px;
-            right:0px;
-            
-            height:120px;
-            
-            transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-         }
-         .label {
-            display:flex;
-            position: absolute;
-            right:0px;
-
-            height:40px;
-            transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-            .icon {
-               display:flex;
-               flex-direction:row;
-               justify-content:center;
-               align-items:center;
-               
-               min-width:40px;
-               max-width:40px;
-               height:40px;
-               border-radius:100%;
-
-               background-color:white;
-               color:var(--defaultBackground);
-            }
-            .info {
-               display:flex;
-               flex-direction:column;
-               justify-content:center;
-               
-               margin-left:10px;
-               
-               color:white;
-               
-               white-space: pre;
-               >div {
-                  position: relative;
-                  
-                  transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
-               }
-               .main {
-                  font-weight:bold;
-                  font-size:1.2rem;
-               }
-               .sub {
-                  transition-delay:.1s;
-               }
-            }
-         }
+      .card1:nth-child(even) & {
+        text-align: left;
+        grid-area: 2 / 1 / -2 / 3;
       }
-   }
+    }
+  }
 }

@@ -85,12 +85,12 @@ var oldAcademicBlock = L.icon({
 const oldAcademicBlockMarker = L.marker([28.544689383780405, 77.27242155338143], { icon: oldAcademicBlock }).addTo(mymap);
 
 // Add popup message
-let template3 = `<h3>Old Academic Block</h3>
+let oldAcademicBlock1 = `<h3>Old Academic Block</h3>
 <div style="text-align:center">
     <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/oldAcademicBlock.jpeg"/>
 </div>
 `
-oldAcademicBlockMarker.bindPopup(template3);
+oldAcademicBlockMarker.bindPopup(oldAcademicBlock1);
 oldAcademicBlockMarker.on('mouseover', function (e) {
   this.openPopup();
 });
@@ -137,8 +137,8 @@ facultyResidenceMarker.on('click', function (e) {
 // RnD Block
 var RnDBlock = L.icon({
   iconUrl: 'img/Map/RnD.png',
-  iconSize: [160,160], // size of the icon
-  iconAnchor: [120, 100], // point of the icon which will correspond to marker's location
+  iconSize: [96,96], // size of the icon
+  iconAnchor: [80, 40], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -200,8 +200,8 @@ libraryMarker.on('click', function (e) {
 
 var openAmphitheatre = L.icon({
   iconUrl: 'img/Map/openAmphitheatre.png',
-  iconSize: [60, 60], // size of the icon
-  iconAnchor: [40, 40], // point of the icon which will correspond to marker's location
+  iconSize: [96,96], // size of the icon
+  iconAnchor: [70, 50], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
 });
 

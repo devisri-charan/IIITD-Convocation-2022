@@ -12,7 +12,7 @@
     --pink: #e83e8c;
     --red: #dc3545;
     --orange: #fd7e14;
-    --yellow: #ffc107;
+    --yellow: #F6D107;
     --green: #28a745;
     --teal: #20c997;
     --cyan: #17a2b8;
@@ -23,7 +23,7 @@
     --secondary: #33211D;
     --success: #28a745;
     --info: #17a2b8;
-    --warning: #ffc107;
+    --warning: #F6D107;
     --danger: #dc3545;
     --light: #FFFBF2;
     --dark: #111;
@@ -2879,8 +2879,8 @@ fieldset:disabled a.btn {
 
 .btn-warning {
     color: #212529;
-    background-color: #ffc107;
-    border-color: #ffc107
+    background-color: #F6D107;
+    border-color: #F6D107
 }
 
 .btn-warning:hover {
@@ -2900,8 +2900,8 @@ fieldset:disabled a.btn {
 .btn-warning.disabled,
 .btn-warning:disabled {
     color: #212529;
-    background-color: #ffc107;
-    border-color: #ffc107
+    background-color: #F6D107;
+    border-color: #F6D107
 }
 
 .btn-warning:not(:disabled):not(.disabled):active,
@@ -3186,14 +3186,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-warning {
-    color: #ffc107;
-    border-color: #ffc107
+    color: #F6D107;
+    border-color: #F6D107
 }
 
 .btn-outline-warning:hover {
     color: #212529;
-    background-color: #ffc107;
-    border-color: #ffc107
+    background-color: #F6D107;
+    border-color: #F6D107
 }
 
 .btn-outline-warning:focus,
@@ -3203,7 +3203,7 @@ fieldset:disabled a.btn {
 
 .btn-outline-warning.disabled,
 .btn-outline-warning:disabled {
-    color: #ffc107;
+    color: #F6D107;
     background-color: transparent
 }
 
@@ -3211,8 +3211,8 @@ fieldset:disabled a.btn {
 .btn-outline-warning:not(:disabled):not(.disabled).active,
 .show>.btn-outline-warning.dropdown-toggle {
     color: #212529;
-    background-color: #ffc107;
-    border-color: #ffc107
+    background-color: #F6D107;
+    border-color: #F6D107
 }
 
 .btn-outline-warning:not(:disabled):not(.disabled):active:focus,
@@ -5261,7 +5261,7 @@ a.badge-info.focus {
 
 .badge-warning {
     color: #212529;
-    background-color: #ffc107
+    background-color: #F6D107
 }
 
 a.badge-warning:hover,
@@ -6741,7 +6741,7 @@ button.bg-info:focus {
 }
 
 .bg-warning {
-    background-color: #ffc107 !important
+    background-color: #F6D107 !important
 }
 
 a.bg-warning:hover,
@@ -6849,7 +6849,7 @@ button.bg-dark:focus {
 }
 
 .border-warning {
-    border-color: #ffc107 !important
+    border-color: #F6D107 !important
 }
 
 .border-danger {
@@ -10456,7 +10456,7 @@ a.text-info:focus {
 }
 
 .text-warning {
-    color: #ffc107 !important
+    color: #F6D107 !important
 }
 
 a.text-warning:hover,
@@ -10840,7 +10840,7 @@ h6,
 .offer,
 .footer {
     background: linear-gradient(rgba(28, 06, 08, 0.8), rgb(88, 2, 13, 0.9)), url(../img/clg.png);
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
 }
