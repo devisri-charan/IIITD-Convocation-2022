@@ -34,7 +34,7 @@
 }
 
 .container th {
-  background-image: linear-gradient(rgba(28, 06, 08, 0.8), rgb(88, 2, 13, 0.9));
+  background-color: #58070d;
 }
 
 .container td:first-child {

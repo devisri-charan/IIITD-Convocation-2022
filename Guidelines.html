@@ -66,23 +66,22 @@
 
     <!-- Navbar Start -->
     <div class="container-fluid p-0 nav-bar">
-        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
-            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-1 px-5">
+            <a href="index.html" class="navbar-brand">
                 <img alt="" src="img/logo.png">
             </a>
             <button Stype="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4">
+                <div class="navbar-nav ml-auto">
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="Schedule.html" class="nav-item nav-link">Schedule</a>
                     <a href="Guidelines.html" class="nav-item nav-link active">Guidelines</a>
                     <a href="StudentCorner.html" class="nav-item nav-link">Student Corner</a>
-                    <a href="Stories.html" class="nav-item nav-link">Stories</a>
+                    <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#staticBackdrop">Stories</a>
                     <a href="ConvoSong.html" class="nav-item nav-link">Convo Song</a>
-                    <a href="https://www.flipbookpdf.net/web/site/593a0d5023e74e15c0b902e4cd702ae406d83c0aFBP23162779.pdf.html"
-                        class="nav-item nav-link">Brochure</a>
+                    <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#staticBackdrop" >Brochure</a>
                     <a href="https://alumni.iiitd.ac.in/alumni_donations" target="_blank" class="nav-item nav-link">Make
                         a Gift</a>
                 </div>
@@ -224,8 +223,8 @@
     </div>
     <!-- Guidelines End-->
 
-   <!-- Footer Start -->
-   <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+    <!-- Footer Start -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
     <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
         <div class="col-lg-3 col-md-6 mb-2">
             <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
@@ -294,11 +293,30 @@
             Reserved.</a></p>
         </div>
     </div>
-   <!-- Footer End -->
+    <!-- Footer End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Disclaimer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                The data will be published on the day of covocation
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
