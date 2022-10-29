@@ -7,6 +7,10 @@
     font-family: 'kohinoor-m', sans-serif;
 }
 
+.note{
+    margin: 1rem auto;
+}
+
 .tabs-nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -127,7 +131,7 @@
     }
 }
 
-@media screen and ((max-width: 768px)) {
+@media screen and ((max-width: 576px)) {
     .rwd-table tbody .label{
         display: none;
     }
