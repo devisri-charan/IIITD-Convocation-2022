@@ -27,7 +27,7 @@
     display: inline-block;
     margin: 25px 20px;
     width: 356px;
-    height: 190px;          
+    height: 200px;          
     background: #fff;
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
@@ -42,9 +42,15 @@
     height: 450px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
     .card .hide{
         display: block;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px){
+    .card .content .details {    
+        padding: 0px !important;
     }
 }
 

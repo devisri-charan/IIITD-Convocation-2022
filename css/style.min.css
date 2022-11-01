@@ -10836,7 +10836,12 @@ h6,
 
 .reservation,
 .page-header,
-.offer,
+.offer{
+    background: linear-gradient(rgb(141, 21, 89, 0.8), #7a0f2e), url(/img/clg.png);
+    background-position: 25% 0%;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
 .footer {
     background: linear-gradient(#8d1559, #7a0f2e), url(../img/clg.png);
     background-position: center;
