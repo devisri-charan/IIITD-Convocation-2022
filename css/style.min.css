@@ -3916,7 +3916,7 @@ input[type="button"].btn-block {
     display: block;
     min-height: 1.5rem;
     padding-left: 1.5rem;
-    color-adjust: exact
+    /* color-adjust: exact; */
 }
 
 .custom-control-inline {
@@ -10843,8 +10843,8 @@ h6,
     background-size:auto;
 }
 .footer {
-    background: linear-gradient(#8d1559, #7a0f2e), url(../img/clg.png);
-    background-position: center;
+    background: linear-gradient(rgb(141, 21, 89, 0.8), #7a0f2e), url(../img/clg.png);
+    background-position: 25% 0%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto;
 }
