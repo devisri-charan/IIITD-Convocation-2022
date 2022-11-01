@@ -13,6 +13,33 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   accessToken: apiKey
 }).addTo(mymap);
 
+//routing
+
+
+// const routing = L.polygon([
+
+
+//   [28.547108892347637, 77.27230485227025],
+//   [28.547228744691754, 77.27218205608638],
+//   [28.547204774233844, 77.27200923182757],
+//   [28.547084921862425, 77.27199558780714],
+//   [28.5470289907091, 77.27219115209999],
+//   [28.547108892347637, 77.27230485227025]
+
+// ], {
+//   color: 'blue',
+
+// }).addTo(mymap)
+
+var arrowhead1 = L.icon({
+  iconUrl: 'img/Map/arrowhead.png',
+  iconSize: [90, 90], // size of the icon
+  iconAnchor: [30, 50], // point of the icon which will correspond to marker's location
+  popupAnchor: [10, -46] // point from which the popup should open relative to the iconAnchor
+});
+
+const arrowheadmarker = L.marker([28.547084921862425, 77.27199558780714], { icon: arrowhead1 }).addTo(mymap);
+// routing ends
 
 //Sports Block
 
