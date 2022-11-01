@@ -39,7 +39,7 @@
 .students a {
     background: #eaeaed;
     border: 1px solid #cecfd5;
-    color: #58070d;
+    color: #7a0f2e;
     display: block;
     font-weight: 600;
     padding: 10px 0;
@@ -48,7 +48,7 @@
 }
 
 .tab-active a {
-    background: #58070d;
+    background: #7a0f2e;
     border-bottom-color: transparent;
     color: #fff;
     cursor: default;
@@ -72,7 +72,7 @@
 
 .rwd-table tr:first-child {
     border-top: none;
-    background: #58070d;
+    background: #7a0f2e;
     color: #fff;
 }
 
@@ -185,7 +185,7 @@
 h1 {
     text-align: center;
     font-size: 2.4em;
-    color: #58070d;
+    color: #7a0f2e;
 }
 
 h3 {

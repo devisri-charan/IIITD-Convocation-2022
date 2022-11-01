@@ -20,7 +20,7 @@
   width: 250px;
   margin: 10px;
   padding: 40px 30px;
-  background: #58070d;
+  background: #7a0f2e;
   filter: brightness(100%);
   border-radius: 40px;
   box-shadow: -6px -6px 20px rgba(255, 255, 255, .1),
@@ -48,7 +48,7 @@
 }
 
 .prof-container .profcard .contentBx h2 {
-  color: #F6D107;
+  color: #eac148;
   font-family: 'kohinoor-m', sans-serif;
   font-weight: 600;
   font-size: 0.9em;
@@ -137,7 +137,7 @@ i.imagec {
 }
 
 span.num {
-  color: #58070d;
+  color: #7a0f2e;
   display: grid;
   place-items: center;
   /* font-weight: 600; */
@@ -147,7 +147,7 @@ span.num {
 }
 
 span.text {
-  color: #58070d;
+  color: #7a0f2e;
   font-size: 1em;
   text-align: center;
   pad: 0.7em 0;

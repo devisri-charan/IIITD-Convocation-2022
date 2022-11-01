@@ -1,5 +1,5 @@
 .page-loader {
-  background: linear-gradient(rgba(28, 06, 08, 0.8), #58070d);
+  background: linear-gradient(rgba(28, 06, 08, 0.8), #7a0f2e);
   margin: 0;
   height: 100%;
   overflow: hidden;
@@ -34,15 +34,15 @@
 @keyframes ring {
   0% {
       transform: rotate(0deg);
-      box-shadow: 1px 5px 2px #F6D107;
+      box-shadow: 1px 5px 2px #eac148;
   }
   50% {
       transform: rotate(180deg);
-      box-shadow: 1px 5px 2px #F6D107;
+      box-shadow: 1px 5px 2px #eac148;
   }
   100% {
       transform: rotate(360deg);
-      box-shadow: 1px 5px 2px #F6D107;
+      box-shadow: 1px 5px 2px #eac148;
   }
 }
 .ring:before {
