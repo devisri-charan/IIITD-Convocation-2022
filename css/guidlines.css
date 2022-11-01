@@ -9,7 +9,7 @@
 }
 
 :root{
-  --clr-light: #58020D;
+  --clr-light: #7a0f2e;
 }
 
 .transition, p, ul li i:before, ul li i:after {
@@ -84,7 +84,7 @@
   display: block;
   margin: 0;
   cursor: pointer;
-  color: #58020D;
+  color: #7a0f2e;
   padding-right: 2rem;
 }
 .rules p {
