@@ -9,8 +9,10 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   id: 'mapbox/streets-v11',
   tileSize: 512,
   zoomOffset: -1,
+  
   accessToken: apiKey
 }).addTo(mymap);
+
 
 //Sports Block
 
@@ -78,8 +80,8 @@ newBoysHostelMarker.on('click', function (e) {
 var oldAcademicBlock = L.icon({
   iconUrl: 'img/Map/oldAcademicBlock.png',
   iconSize: [195, 220], // size of the icon
-  iconAnchor: [85, 105], // point of the icon which will correspond to marker's location
-  popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [75, 125], // point of the icon which will correspond to marker's location
+  popupAnchor: [0, -26] // point from which the popup should open relative to the iconAnchor
 });
 
 const oldAcademicBlockMarker = L.marker([28.544689383780405, 77.27242155338143], { icon: oldAcademicBlock }).addTo(mymap);
@@ -137,9 +139,9 @@ facultyResidenceMarker.on('click', function (e) {
 // RnD Block
 var RnDBlock = L.icon({
   iconUrl: 'img/Map/RnD.png',
-  iconSize: [96,96], // size of the icon
-  iconAnchor: [80, 40], // point of the icon which will correspond to marker's location
-  popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
+  iconSize: [120,90], // size of the icon
+  iconAnchor: [70, 30], // point of the icon which will correspond to marker's location
+  popupAnchor: [-30, -15] // point from which the popup should open relative to the iconAnchor
 });
 
 const RnDBlockMarker = L.marker([28.544016182854115, 77.27164268068114], { icon: RnDBlock }).addTo(mymap);
@@ -169,8 +171,8 @@ RnDBlockMarker.on('click', function (e) {
 var library = L.icon({
   iconUrl: 'img/Map/library.png',
   iconSize: [87.5, 70], // size of the icon
-  iconAnchor: [50, 20], // point of the icon which will correspond to marker's location
-  popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [25, 40], // point of the icon which will correspond to marker's location
+  popupAnchor: [25, -10] // point from which the popup should open relative to the iconAnchor
 });
 
 const libraryMarker = L.marker([28.543974621298453, 77.27246179147589], { icon: library }).addTo(mymap);
@@ -200,9 +202,9 @@ libraryMarker.on('click', function (e) {
 
 var openAmphitheatre = L.icon({
   iconUrl: 'img/Map/openAmphitheatre.png',
-  iconSize: [96,96], // size of the icon
-  iconAnchor: [70, 50], // point of the icon which will correspond to marker's location
-  popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
+  iconSize: [100,59], // size of the icon
+  iconAnchor: [65, 35], // point of the icon which will correspond to marker's location
+  popupAnchor: [0, -40] // point from which the popup should open relative to the iconAnchor
 });
 
 const openAmphitheatreMarker = L.marker([28.544119, 77.272147], { icon: openAmphitheatre }).addTo(mymap);
@@ -231,9 +233,9 @@ openAmphitheatreMarker.on('click', function (e) {
 // LHC
 var LHC = L.icon({
   iconUrl: 'img/Map/LHC.png',
-  iconSize: [128, 128], // size of the icon
-  iconAnchor: [60, 80], // point of the icon which will correspond to marker's location
-  popupAnchor: [0, -76] // point from which the popup should open relative to the iconAnchor
+  iconSize: [157, 110], // size of the icon
+  iconAnchor: [20, 80], // point of the icon which will correspond to marker's location
+  popupAnchor: [0, -50] // point from which the popup should open relative to the iconAnchor
 });
 
 const LHCMarker = L.marker([28.545527806449364, 77.2730568583655], { icon: LHC }).addTo(mymap);
@@ -262,7 +264,7 @@ LHCMarker.on('click', function (e) {
 
 // Add circle 
 
-const circle = L.circle([28.545679, 77.272984], {
+const circle = L.circle([28.5458350116291, 77.273132389721], {
   radius: 60,
   color: 'green',
   fillColor: 'red',
