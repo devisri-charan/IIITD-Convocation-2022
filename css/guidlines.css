@@ -66,14 +66,13 @@
 }
 
 .rules h2 {
-  font-size: 36px;
+  font-size: 28px;
   font-family: "kohinoor-b", sans-serif;
   letter-spacing: 1px;
   display: block;
   margin: 0;
   padding: 2rem 0;
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 
 .rules h3 {
@@ -83,7 +82,6 @@
   letter-spacing: 1px;
   display: block;
   margin: 0;
-  cursor: pointer;
   color: #7a0f2e;
 
 }
@@ -148,7 +146,6 @@
 }
 .rules ul li input[type=checkbox] {
   position: absolute;
-  cursor: pointer;
   width: 100%;
   height: 100%;
   z-index: 5;
