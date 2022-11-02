@@ -74,8 +74,16 @@
   height: 65px;
   display: flex;
   flex-direction: column;
+  
 }
 
+@media (max-width: 568px) {
+
+  .float-area{
+    display: none;
+  }
+  
+}
 .floating-img {
   transform: translateY(-10%);
   animation: floater 1.5s infinite;
