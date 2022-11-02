@@ -7,12 +7,6 @@
     font-family: 'kohinoor-m', sans-serif;
 }
 
-.note{
-    margin-top: 1rem;
-    margin-left:  auto;
-    margin-right: auto;
-    margin-bottom: 0;
-}
 
 .tabs-nav {
     display: grid;
