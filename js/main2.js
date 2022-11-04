@@ -19,12 +19,12 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 // const routing = L.polygon([
 
 
-//   [28.547108892347637, 77.27230485227025],
-//   [28.547228744691754, 77.27218205608638],
-//   [28.547204774233844, 77.27200923182757],
-//   [28.547084921862425, 77.27199558780714],
-//   [28.5470289907091, 77.27219115209999],
-//   [28.547108892347637, 77.27230485227025]
+  // [28.547108892347637, 77.27230485227025],
+  // [28.547228744691754, 77.27218205608638],
+  // [28.547204774233844, 77.27200923182757],
+  // [28.547084921862425, 77.27199558780714],
+  // [28.5470289907091, 77.27219115209999],
+  // [28.547108892347637, 77.27230485227025]
 
 // ], {
 //   color: 'blue',
@@ -33,13 +33,26 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 var arrowhead1 = L.icon({
   iconUrl: 'img/Map/arrowhead.png',
-  iconSize: [90, 90], // size of the icon
-  iconAnchor: [30, 50], // point of the icon which will correspond to marker's location
-  popupAnchor: [10, -46] // point from which the popup should open relative to the iconAnchor
+  iconSize: [30,30], // size of the icon
+  iconAnchor: [-10, 20], // point of the icon which will correspond to marker's location
+  popupAnchor: [10, -46], // point from which the popup should open relative to the iconAnchor
+  
 });
 
 const arrowheadmarker = L.marker([28.547084921862425, 77.27199558780714], { icon: arrowhead1 }).addTo(mymap);
 // routing ends
+
+var location1 = L.icon({
+  iconUrl: 'img/Map/location_1.png',
+  iconSize: [25.6,40], // size of the icon
+   // point of the icon which will correspond to marker's location
+  popupAnchor: [10, -46] // point from which the popup should open relative to the iconAnchor
+  
+});
+
+const locationmarker = L.marker([28.546034, 77.272888], { icon: location1 }).addTo(mymap);
+// routing ends
+
 
 //Sports Block
 
@@ -107,7 +120,7 @@ newBoysHostelMarker.on('click', function (e) {
 var oldAcademicBlock = L.icon({
   iconUrl: 'img/Map/oldAcademicBlock.png',
   iconSize: [195, 220], // size of the icon
-  iconAnchor: [75, 125], // point of the icon which will correspond to marker's location
+  iconAnchor: [75, 140], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -26] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -167,7 +180,7 @@ facultyResidenceMarker.on('click', function (e) {
 var RnDBlock = L.icon({
   iconUrl: 'img/Map/RnD.png',
   iconSize: [120,90], // size of the icon
-  iconAnchor: [70, 30], // point of the icon which will correspond to marker's location
+  iconAnchor: [50, 25], // point of the icon which will correspond to marker's location
   popupAnchor: [-30, -15] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -198,7 +211,7 @@ RnDBlockMarker.on('click', function (e) {
 var library = L.icon({
   iconUrl: 'img/Map/library.png',
   iconSize: [87.5, 70], // size of the icon
-  iconAnchor: [25, 40], // point of the icon which will correspond to marker's location
+  iconAnchor: [20, 40], // point of the icon which will correspond to marker's location
   popupAnchor: [25, -10] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -229,8 +242,8 @@ libraryMarker.on('click', function (e) {
 
 var openAmphitheatre = L.icon({
   iconUrl: 'img/Map/openAmphitheatre.png',
-  iconSize: [100,59], // size of the icon
-  iconAnchor: [65, 35], // point of the icon which will correspond to marker's location
+  iconSize: [80,45], // size of the icon
+  iconAnchor: [50, 35], // point of the icon which will correspond to marker's location
   popupAnchor: [0, -40] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -330,10 +343,35 @@ const polygon = L.polygon([
   [28.548673, 77.274031],
   [28.548175, 77.274444],
   [28.543510, 77.272463],
-  [28.544167, 77.269901],
+  [28.544167, 77.269901]
 ], {
   color: 'maroon',
   fillColor: 'red',
   fillOpacity: 0.2
 }).addTo(mymap)
 
+
+
+
+var line_points = [
+
+  [28.546034, 77.272888],
+  [28.546823, 77.272833],
+  [28.547173, 77.272249]
+
+
+];
+
+// Define polyline options
+// http://leafletjs.com/reference.html#polyline
+var polyline_options = {
+  color: '#4a89f3',
+  weight : 6
+};
+
+// Defining a polygon here instead of a polyline will connect the
+// endpoints and fill the path.
+// http://leafletjs.com/reference.html#polygon
+var polyline = L.polyline(line_points, polyline_options).addTo(mymap);
+
+//map routing
