@@ -8,10 +8,6 @@
   src: url('fonts/Kohinoor-Bold.otf') format('opentype');
 }
 
-:root{
-  --clr-light: #7a0f2e;
-}
-
 .transition, p, ul li i:before, ul li i:after {
   transition: all 0.25s ease-in-out;
 }
@@ -52,8 +48,12 @@
   }
 }
 
+.table-bordered td{
+  padding: 1rem !important;
+}
+
 .rules h1, h2 {
-  color: var(--clr-light);
+  color: #640a26;
 }
 
 .rules h1 {
@@ -66,14 +66,13 @@
 }
 
 .rules h2 {
-  font-size: 36px;
+  font-size: 28px;
   font-family: "kohinoor-b", sans-serif;
   letter-spacing: 1px;
   display: block;
   margin: 0;
   padding: 2rem 0;
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 
 .rules h3 {
@@ -83,8 +82,7 @@
   letter-spacing: 1px;
   display: block;
   margin: 0;
-  cursor: pointer;
-  color: #7a0f2e;
+  color: #640a26;
 
 }
 .rules p {
@@ -148,7 +146,6 @@
 }
 .rules ul li input[type=checkbox] {
   position: absolute;
-  cursor: pointer;
   width: 100%;
   height: 100%;
   z-index: 5;

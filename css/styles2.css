@@ -20,7 +20,7 @@
   width: 250px;
   margin: 10px;
   padding: 40px 30px;
-  background: #7a0f2e;
+  background: #640a26;
   filter: brightness(100%);
   border-radius: 40px;
   box-shadow: -6px -6px 20px rgba(255, 255, 255, .1),
@@ -137,7 +137,7 @@ i.imagec {
 }
 
 span.num {
-  color: #7a0f2e;
+  color: #640a26;
   display: grid;
   place-items: center;
   /* font-weight: 600; */
@@ -147,7 +147,7 @@ span.num {
 }
 
 span.text {
-  color: #7a0f2e;
+  color: #640a26;
   font-size: 1em;
   text-align: center;
   pad: 0.7em 0;
