@@ -1,6 +1,6 @@
 .pGallery {
     background: transparent;
-    color: #7a0f2e;
+    color: #640a26;
 }
 
 .pGallery * {
@@ -120,7 +120,7 @@ h1 {
     overflow: hidden;
     display: block;
     padding: 1vh;
-    background: #7a0f2e;
+    background: #640a26;
     box-shadow: 0 10px 50px white;
 }
 
