@@ -10713,6 +10713,11 @@ h6,
         position: relative;
         background-color: rgb(100, 10, 38,0.8);
     }
+
+    .container-fluid.nav-bar1{
+        position: relative;
+        background-color: #640a26;
+    }
 }
 
 .navbar-dark .navbar-nav .nav-link {
