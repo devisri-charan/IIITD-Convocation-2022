@@ -48,6 +48,10 @@
   }
 }
 
+.table-bordered td{
+  padding: 0.5rem !important;
+}
+
 .rules h1, h2 {
   color: #640a26;
 }
