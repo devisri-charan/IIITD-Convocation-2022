@@ -1,5 +1,10 @@
 (function ($) {
   "use strict";
+  
+  // Page-loader
+  $(window).on('load', function() {
+    $("#loader").delay(1000).fadeOut(500);
+  })
 
   // Dropdown on mouse hover
   $(document).ready(function () {

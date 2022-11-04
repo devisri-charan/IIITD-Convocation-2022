@@ -42,15 +42,17 @@
 <body>
 
     <!-- Page - loader start-->
-    <div class="center page-loader">
-        <div class="ring"></div>
-        <span class="breathing"><img alt="" src="img/loader.png"></span>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-        <script type="text/javascript">
-            $(window).load(function () {
-                $(".center").fadeOut("slow");
-            });
-        </script>
+    <div id="loader" class="loader orange-color">
+        <div class="loader-container">
+            <div class='loader-icon'>
+                <img src="img/loader.png" alt="">
+                <script type="text/javascript">
+                    $(window).load(function () {
+                        $(".center").fadeOut("slow");
+                    });
+                </script>
+            </div>
+        </div>
     </div>
     <!-- Page - loader end -->
 
