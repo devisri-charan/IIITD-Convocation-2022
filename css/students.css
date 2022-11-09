@@ -31,7 +31,6 @@
 }
 
 .students a {
-    background: #eaeaed;
     border: 1px solid #cecfd5;
     color: #640a26;
     display: block;
@@ -71,12 +70,12 @@
 }
 
 .rwd-table tr {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid rgb(0, 0, 0);
     border-bottom: 1px solid #ddd;
 }
 
 .rwd-table tr:nth-child(odd):not(:first-child) {
-    background-color: #eaeaed;
+    background-color: rgb(255, 255, 255,0.5);
 }
 
 .rwd-table th {

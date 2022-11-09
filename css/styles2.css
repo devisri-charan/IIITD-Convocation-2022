@@ -4,7 +4,7 @@
 }
 
 .about-img {
-  border-radius: 25px;
+  border-radius: 20px;
 }
 
 .prof-container {
@@ -21,10 +21,9 @@
   margin: 10px;
   padding: 40px 30px;
   background: #640a26;
-  filter: brightness(100%);
-  border-radius: 40px;
-  box-shadow: -6px -6px 20px rgba(255, 255, 255, .1),
-    6px 6px 20px rgba(0, 0, 0, 0.1);
+  /* filter: brightness(100%); */
+  border-radius: 20px;
+  box-shadow: -6px -6px 20px rgba(255, 255, 255, .1), 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .prof-container .profcard:hover {
@@ -60,7 +59,7 @@
   font-family: 'kohinoor-m', sans-serif;
   font-weight: 500;
   font-size: 1.2em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .prof-container .profcard .imgBx,
@@ -122,7 +121,7 @@
 }
 
 .counter-image {
-  border-radius: 15px;
+  /* border-radius: 15px; */
   height: auto;
   text-align: center;
   width: auto;
