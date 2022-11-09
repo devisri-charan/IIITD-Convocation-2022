@@ -1,5 +1,14 @@
 (function ($) {
   "use strict";
+
+  $(document).ready(function() {
+    if($(window).width() < 515) {
+        $("#carousel1").attr("src", "img/Carousel/mobile1.png");
+        $("#carousel2").attr("src", "img/Carousel/mobile2.png");
+        $("#hero").attr("src", "img/Carousel/hero.png");
+        $("#hero1").attr("src", "img/Carousel/hero.png");
+    }
+  }); 
   
   // Page-loader
   $(window).on('load', function() {
