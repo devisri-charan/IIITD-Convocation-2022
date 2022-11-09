@@ -4663,7 +4663,7 @@ input[type="button"].btn-block {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1083.98px) {
   .navbar-expand-lg > .container,
   .navbar-expand-lg > .container-fluid,
   .navbar-expand-lg > .container-sm,
@@ -10743,7 +10743,7 @@ h6,
   z-index: 9;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1083.98px) {
   .container-fluid.nav-bar,
   .nav-bar.container-sm,
   .nav-bar.container-md,
