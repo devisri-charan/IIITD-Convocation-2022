@@ -2774,14 +2774,15 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #eac148;
-  border-color: #eac148;
+  background-color: #640a26;
+  border-color: #640a26;
 }
 
 .btn-secondary:hover {
   color: #fff;
   background-color: #640a26;
   border-color: #640a26;
+  transform: scale(1.05);
 }
 
 .btn-secondary:focus,
@@ -2810,7 +2811,7 @@ fieldset:disabled a.btn {
 .btn-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgb(255, 234, 13);
+  box-shadow: 0 0 0 0.2rem #640a26;
 }
 
 .btn-success {
