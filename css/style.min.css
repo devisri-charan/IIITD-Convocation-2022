@@ -10881,7 +10881,7 @@ h6,
 .reservation,
 .page-header,
 .offer {
-  background: linear-gradient(rgb(100, 10, 38, 0.8), #2b0520), url(/img/clg.png);
+  background: linear-gradient(rgb(100, 10, 38, 0.8), #2b0520), url(../img/clg.png);
   background-position: 25% 0%;
   background-repeat: no-repeat;
   background-size: auto;
