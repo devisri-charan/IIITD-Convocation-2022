@@ -123,31 +123,31 @@ var oldBoysHostel = L.icon({
   iconUrl: 'img/Map/hostel.png',
 
   iconSize: [160, 160], // size of the icon
-  iconAnchor: [85,90] // point of the icon which will correspond to marker's location
-  // popupAnchor: [10, -56] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [85,90], // point of the icon which will correspond to marker's location
+  popupAnchor: [-10, -36] // point from which the popup should open relative to the iconAnchor
 });
 
 const oldBoysHostelMarker = L.marker([28.547418551856236, 77.2737823769367], { icon: oldBoysHostel }).addTo(mymap);
 
 // Popup
-// let oldBoysHostel1 = `
-// <h3>Old Boys Hostel</h3>
-// <div style="text-align:center">
-//     <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
-// </div>
-// `
-// oldBoysHostelMarker.bindPopup(oldBoysHostel1);
+let oldBoysHostel1 = `
+<h3>Old Boys Hostel</h3>
+<div style="text-align:center">
+    <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
+</div>
+`
+oldBoysHostelMarker.bindPopup(oldBoysHostel1);
 
-// oldBoysHostelMarker.on('mouseover', function (e) {
-//   this.openPopup();
-// });
-// oldBoysHostelMarker.on('mouseout', function (e) {
-//   this.closePopup();
-// });
-// oldBoysHostelMarker.on('click', function (e) {
-//   this.openPopup();
-//   //disable mouseout behavior here?
-// });
+oldBoysHostelMarker.on('mouseover', function (e) {
+  this.openPopup();
+});
+oldBoysHostelMarker.on('mouseout', function (e) {
+  this.closePopup();
+});
+oldBoysHostelMarker.on('click', function (e) {
+  this.openPopup();
+  //disable mouseout behavior here?
+});
 
 
 // Old Girls Hostel
@@ -157,42 +157,32 @@ var oldGirlsHostel = L.icon({
   iconUrl: 'img/Map/hostel.png',
 
   iconSize: [160, 160], // size of the icon
-  iconAnchor: [80, 80] // point of the icon which will correspond to marker's location
-  // popupAnchor: [10, -56] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [80, 80], // point of the icon which will correspond to marker's location
+  popupAnchor: [0, 0] // point from which the popup should open relative to the iconAnchor
 });
 
 const oldGirlsHostelMarker = L.marker([28.54694732857778, 77.27348196952032], { icon: oldGirlsHostel }).addTo(mymap);
 
 
-// var oldGirlsHostel = L.icon({
-//   iconUrl: 'img/Map/hostel.png',
+// Popup
+let oldGirlsHostel1 = `
+<h3>Old Girls Hostel</h3>
+<div style="text-align:center">
+    <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
+</div>
+`
+oldGirlsHostelMarker.bindPopup(oldGirlsHostel1);
 
-//   iconSize: [160, 160], // size of the icon
-//   iconAnchor: [90, -30], // point of the icon which will correspond to marker's location
-//   popupAnchor: [0, -50] // point from which the popup should open relative to the iconAnchor
-// });
-
-// const oldGirlsHostelMarker = L.marker([28.54694732857778, 77.27348196952032], { icon: oldGirlsHostel }).addTo(mymap);
-
-// // Popup
-// let oldGirlsHostel1 = `
-// <h3>Old Girls Hostel</h3>
-// <div style="text-align:center">
-//     <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
-// </div>
-// `
-// oldGirlsHostelMarker.bindPopup(oldGirlsHostel1);
-
-// oldGirlsHostelMarker.on('mouseover', function (e) {
-//   this.openPopup();
-// });
-// oldGirlsHostelMarker.on('mouseout', function (e) {
-//   this.closePopup();
-// });
-// oldGirlsHostelMarker.on('click', function (e) {
-//   this.openPopup();
-//   //disable mouseout behavior here?
-// });
+oldGirlsHostelMarker.on('mouseover', function (e) {
+  this.openPopup();
+});
+oldGirlsHostelMarker.on('mouseout', function (e) {
+  this.closePopup();
+});
+oldGirlsHostelMarker.on('click', function (e) {
+  this.openPopup();
+  //disable mouseout behavior here?
+});
 
 
 // Old Academic Block
