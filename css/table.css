@@ -8,6 +8,7 @@
   text-align: left;
   overflow: hidden;
   margin: 0 auto;
+  width: 80%;
   padding: 0 0 8em 0;
 }
 .schedule th{
@@ -20,7 +21,7 @@
   padding: 1rem;
   font-weight: normal;
   font-size: 1em;
-  color: #640a26;
+  color: black;
 }
 
 /* Background-color of the all rows */

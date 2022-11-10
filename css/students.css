@@ -21,13 +21,13 @@
 
 .tabs-nav li:first-child a {
     border-right: 0;
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .tabs-nav li:last-child a {
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .students a {
@@ -80,6 +80,8 @@
 
 .rwd-table th {
     display: block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .rwd-table td {
@@ -128,7 +130,7 @@
     }
 }
 
-@media screen and ((max-width: 576px)) {
+@media screen and ((max-width: 601px)) {
     .rwd-table tbody .label{
         display: none;
     }
@@ -136,7 +138,7 @@
 
 @media screen and (min-width: 600px) {
     .rwd-table tr:hover:not(:first-child) {
-        background-color: #d8e7f3;
+        background-color: #fff;
     }
 
     .rwd-table td:before {

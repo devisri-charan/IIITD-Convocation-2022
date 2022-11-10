@@ -29,11 +29,7 @@
 .guidelines {
   min-height: 0;
   display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
   background-color: transparent;
-  max-width: 80%;
   padding: 30px;
 }
 
@@ -86,7 +82,7 @@
 
 }
 .rules p {
-  color: black;
+  color: #640a26;
   font-size: 17px;
   line-height: 26px;
   letter-spacing: 1px;
