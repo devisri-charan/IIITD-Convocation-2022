@@ -4,7 +4,6 @@
   $(document).ready(function() {
     if($(window).width() < 515) {
         $("#hero").attr("src", "img/Carousel/hero.png");
-        $("#hero1").attr("src", "img/Carousel/hero.png");
     }
   }); 
   
