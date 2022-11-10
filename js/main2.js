@@ -1,17 +1,20 @@
 const apiKey = 'pk.eyJ1IjoiYWxmcmVkMjAxNiIsImEiOiJja2RoMHkyd2wwdnZjMnJ0MTJwbnVmeng5In0.E4QbAFjiWLY8k3AFhDtErA';
 
 const mymap = L.map('map',  {
-  scrollWheelZoom: false
+  scrollWheelZoom: false,
+  zoomControl: false,
+
 } ).setView([28.545751, 77.272683], 17);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-  maxZoom: 18,
+
   id: 'mapbox/streets-v11',
+
   tileSize: 512,
   zoomOffset: -1,
-  
   accessToken: apiKey
 }).addTo(mymap);
+
 
 //routing
 
@@ -120,64 +123,76 @@ var oldBoysHostel = L.icon({
   iconUrl: 'img/Map/hostel.png',
 
   iconSize: [160, 160], // size of the icon
-  iconAnchor: [60, 30], // point of the icon which will correspond to marker's location
-  popupAnchor: [100, -56] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [85,90] // point of the icon which will correspond to marker's location
+  // popupAnchor: [10, -56] // point from which the popup should open relative to the iconAnchor
 });
 
-const oldBoysHostelMarker = L.marker([28.548098, 77.273685], { icon: oldBoysHostel }).addTo(mymap);
+const oldBoysHostelMarker = L.marker([28.547418551856236, 77.2737823769367], { icon: oldBoysHostel }).addTo(mymap);
 
 // Popup
-let oldBoysHostel1 = `
-<h3>Old Boys Hostel</h3>
-<div style="text-align:center">
-    <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
-</div>
-`
-oldBoysHostelMarker.bindPopup(oldBoysHostel1);
+// let oldBoysHostel1 = `
+// <h3>Old Boys Hostel</h3>
+// <div style="text-align:center">
+//     <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
+// </div>
+// `
+// oldBoysHostelMarker.bindPopup(oldBoysHostel1);
 
-oldBoysHostelMarker.on('mouseover', function (e) {
-  this.openPopup();
-});
-oldBoysHostelMarker.on('mouseout', function (e) {
-  this.closePopup();
-});
-oldBoysHostelMarker.on('click', function (e) {
-  this.openPopup();
-  //disable mouseout behavior here?
-});
+// oldBoysHostelMarker.on('mouseover', function (e) {
+//   this.openPopup();
+// });
+// oldBoysHostelMarker.on('mouseout', function (e) {
+//   this.closePopup();
+// });
+// oldBoysHostelMarker.on('click', function (e) {
+//   this.openPopup();
+//   //disable mouseout behavior here?
+// });
 
 
 // Old Girls Hostel
+
 
 var oldGirlsHostel = L.icon({
   iconUrl: 'img/Map/hostel.png',
 
   iconSize: [160, 160], // size of the icon
-  iconAnchor: [90, -30], // point of the icon which will correspond to marker's location
-  popupAnchor: [-10, -56] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [80, 80] // point of the icon which will correspond to marker's location
+  // popupAnchor: [10, -56] // point from which the popup should open relative to the iconAnchor
 });
 
-const oldGirlsHostelMarker = L.marker([28.548098, 77.273685], { icon: oldGirlsHostel }).addTo(mymap);
+const oldGirlsHostelMarker = L.marker([28.54694732857778, 77.27348196952032], { icon: oldGirlsHostel }).addTo(mymap);
 
-// Popup
-let oldGirlsHostel1 = `
-<h3>Old Girls Hostel</h3>
-<div style="text-align:center">
-    <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
-</div>
-`
-oldGirlsHostelMarker.bindPopup(oldGirlsHostel1);
 
-oldGirlsHostelMarker.on('mouseover', function (e) {
-  this.openPopup();
-});
-oldGirlsHostelMarker.on('mouseout', function (e) {
-  this.closePopup();
-});
-oldGirlsHostelMarker.on('click', function (e) {
-  this.openPopup();
-  //disable mouseout behavior here?
-});
+// var oldGirlsHostel = L.icon({
+//   iconUrl: 'img/Map/hostel.png',
+
+//   iconSize: [160, 160], // size of the icon
+//   iconAnchor: [90, -30], // point of the icon which will correspond to marker's location
+//   popupAnchor: [0, -50] // point from which the popup should open relative to the iconAnchor
+// });
+
+// const oldGirlsHostelMarker = L.marker([28.54694732857778, 77.27348196952032], { icon: oldGirlsHostel }).addTo(mymap);
+
+// // Popup
+// let oldGirlsHostel1 = `
+// <h3>Old Girls Hostel</h3>
+// <div style="text-align:center">
+//     <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
+// </div>
+// `
+// oldGirlsHostelMarker.bindPopup(oldGirlsHostel1);
+
+// oldGirlsHostelMarker.on('mouseover', function (e) {
+//   this.openPopup();
+// });
+// oldGirlsHostelMarker.on('mouseout', function (e) {
+//   this.closePopup();
+// });
+// oldGirlsHostelMarker.on('click', function (e) {
+//   this.openPopup();
+//   //disable mouseout behavior here?
+// });
 
 
 // Old Academic Block
