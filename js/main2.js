@@ -133,7 +133,7 @@ const oldBoysHostelMarker = L.marker([28.547418551856236, 77.2737823769367], { i
 let oldBoysHostel1 = `
 <h3>Old Boys Hostel</h3>
 <div style="text-align:center">
-    <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
+    <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/oldBoysHostel.jpg"/>
 </div>
 `
 oldBoysHostelMarker.bindPopup(oldBoysHostel1);
@@ -168,7 +168,7 @@ const oldGirlsHostelMarker = L.marker([28.54694732857778, 77.27348196952032], { 
 let oldGirlsHostel1 = `
 <h3>Old Girls Hostel</h3>
 <div style="text-align:center">
-    <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/newBoysHostel.jpg"/>
+    <img width="150" height="150" style="object-fit: cover; object-position: center;" src="img/Map/oldGirlsHostel.jpg"/>
 </div>
 `
 oldGirlsHostelMarker.bindPopup(oldGirlsHostel1);
