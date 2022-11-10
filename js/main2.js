@@ -123,8 +123,8 @@ var oldBoysHostel = L.icon({
   iconUrl: 'img/Map/hostel.png',
 
   iconSize: [160, 160], // size of the icon
-  iconAnchor: [85,90], // point of the icon which will correspond to marker's location
-  popupAnchor: [-10, -36] // point from which the popup should open relative to the iconAnchor
+  iconAnchor: [85, 95], // point of the icon which will correspond to marker's location
+  popupAnchor: [-30, -15] // point from which the popup should open relative to the iconAnchor
 });
 
 const oldBoysHostelMarker = L.marker([28.547418551856236, 77.2737823769367], { icon: oldBoysHostel }).addTo(mymap);
@@ -158,7 +158,7 @@ var oldGirlsHostel = L.icon({
 
   iconSize: [160, 160], // size of the icon
   iconAnchor: [80, 80], // point of the icon which will correspond to marker's location
-  popupAnchor: [0, 0] // point from which the popup should open relative to the iconAnchor
+  popupAnchor: [-15,-15] // point from which the popup should open relative to the iconAnchor
 });
 
 const oldGirlsHostelMarker = L.marker([28.54694732857778, 77.27348196952032], { icon: oldGirlsHostel }).addTo(mymap);
