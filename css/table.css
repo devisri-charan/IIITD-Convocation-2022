@@ -4,46 +4,35 @@
   src: url("fonts/Kohinoor-Light.otf") format("opentype");
 }
 
-.container td {
-  font-weight: normal;
-  font-size: 1em;
-  color: black;
-  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
-  -moz-box-shadow: 0 2px 2px -2px #0e1119;
-  box-shadow: 0 2px 2px -2px #0e1119;
-}
-
-.container {
+.schedule {
   text-align: left;
   overflow: hidden;
-  width: 80%;
   margin: 0 auto;
-  display: table;
   padding: 0 0 8em 0;
 }
-.container th{
+.schedule th{
+  text-align: center;
+  color: white;
   padding: 1rem;
 }
 
-.container td {
+.schedule td {
   padding: 1rem;
-  border: 0.5px solid black;
+  font-weight: normal;
+  font-size: 1em;
+  color: #640a26;
 }
 
 /* Background-color of the all rows */
-.container tr {
-  background-color: transparent;
+.schedule tr {
+  background: transparent;
 }
 
-.container th {
+.schedule th {
   background: linear-gradient(rgb(100, 10, 38,0.8), #2b0520);
 }
 
-.container td:first-child {
-  color: black;
-}
-
-.container td:hover {
+.schedule td:hover {
   background-color: transparent;
   font-weight: bold;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
@@ -54,12 +43,12 @@
   transition-timing-function: line;
 }
 
-@media (max-width: 800px) {
-  .container td:nth-child(4),
-  .container th:nth-child(4) {
+/* @media (max-width: 800px) {
+  .schedule td:nth-child(4),
+  .schedule th:nth-child(4) {
     display: none;
   }
-}
+} */
 
 .float-area {
   position: relative;

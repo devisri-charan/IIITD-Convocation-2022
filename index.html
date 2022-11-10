@@ -89,12 +89,11 @@
         <div id="blog-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <picture>
-                        <source media="(max-width: 515px)" srcset="img/Carousel/mobile1.png">
-                        <img class="w-100" src="img/Carousel/1.png" alt="Image">
-                    </picture>
+                    <img id="carousel" class="w-100" src="img/Carousel/1.png" alt="Image">
+                    <img id="carousel1" class="w-100" src="img/Carousel/mobile1.png" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <img id="hero" class="img-fluid hero-image w-100" src="img/Carousel/hero.gif" alt="Hero Image">
+                        <img id="hero1" class="img-fluid hero-image w-100" src="img/Carousel/hero.png" alt="Hero Image">
                     </div>
                 </div>
             </div>
@@ -572,6 +571,7 @@
             height: 500px;
             width: 90%;
             margin: 5rem auto;
+            border-radius: 20px;
         }
     </style>
     <div id="map"></div>

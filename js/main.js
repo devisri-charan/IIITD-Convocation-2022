@@ -1,12 +1,5 @@
 (function ($) {
-  "use strict";
-
-  $(document).ready(function() {
-    if($(window).width() < 515) {
-        $("#hero").attr("src", "img/Carousel/hero.png");
-    }
-  }); 
-  
+  "use strict";  
   // Page-loader
   $(window).on('load', function() {
     $("#loader").delay(1000).fadeOut(500);

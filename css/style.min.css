@@ -10896,7 +10896,30 @@ h6,
   background-size: auto;
 }
 
-.fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
+#carousel{
+  display: block;
+}
+#carousel1{
+  display: none;
+}
+#hero{
+  display: block;
+}
+#hero1{
+  display: none;
+}
+
+@media (max-width: 515px) {
+  #carousel{
+    display: none;
+  }
+  #carousel1{
+    display: block;
+  }
+  #hero{
+    display: none;
+  }
+  #hero1{
+    display: block;
+  }
 }
