@@ -54,6 +54,13 @@
   }
 }
 
+@media (max-width: 320px){
+  .card{
+    width: 300px;
+    font-size: small;
+  }
+}
+
 .imageBox {
   position: absolute;
   left: 50%;
