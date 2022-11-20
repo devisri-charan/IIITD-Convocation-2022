@@ -94,13 +94,13 @@
 }
 
 /* :: mediaqueries :: */
-@media (min-width: 680px) {
+@media (min-width: 576px) {
   .card1 {
     grid-template-columns: auto minmax(100px, 470px) auto;
     grid-template-rows: repeat(2, 1fr) auto auto;
   }
   .card1__thumb {
-    max-width: 700px;
+    max-width: 576px;
     justify-self: center;
     grid-area: 1/1/-2/-1;
   }
@@ -111,7 +111,7 @@
 @media (min-width: 900px) {
   .card1 {
     grid-template-columns: auto 70px minmax(100px, 400px);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
   }
   .card1:nth-child(even) {
     grid-template-columns: minmax(100px, 400px) 70px auto;
