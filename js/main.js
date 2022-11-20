@@ -1,14 +1,9 @@
 (function ($) {
   "use strict";  
   // Page-loader
-  // $(window).on('load', function() {
-  //   $("#loader").delay(1000).fadeOut(500);
-  // })
-
-  // if($(window).width() < 515) {
-  //   $("#carousel").attr("src", "img/Carousel/mobile1.png");
-  //   $("#hero").attr("src", "img/Carousel/hero.png");
-  // }
+  $(window).on('load', function() {
+    $("#loader").delay(1000).fadeOut(500);
+  })
 
   if($(window).width() < 515) {
     $("#carousel").attr("src", "img/Carousel/mobile1.png");
