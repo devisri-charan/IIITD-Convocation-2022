@@ -246,10 +246,10 @@ button {
   border-radius: 10px;
 }
 
-button:focus {
+/* button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
-}
+} */
 
 input,
 button,
@@ -10879,47 +10879,14 @@ h6,
   padding: 0;
   list-style-type: none;
 }
-
+/* 
 .reservation,
 .page-header,
-.offer {
-  background: linear-gradient(rgb(100, 10, 38, 0.8), #2b0520), url(../img/clg.png);
-  background-position: 25% 0%;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
+.offer,
 .footer {
   background: linear-gradient(rgb(100, 10, 38, 0.8), #2b0520),
     url(../img/clg.png);
   background-position: 25% 0%;
   background-repeat: no-repeat;
   background-size: auto;
-}
-
-#carousel{
-  display: block;
-}
-#carousel1{
-  display: none;
-}
-#hero{
-  display: block;
-}
-#hero1{
-  display: none;
-}
-
-@media (max-width: 515px) {
-  #carousel{
-    display: none;
-  }
-  #carousel1{
-    display: block;
-  }
-  #hero{
-    display: none;
-  }
-  #hero1{
-    display: block;
-  }
-}
+} */
