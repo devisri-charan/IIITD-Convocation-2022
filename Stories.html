@@ -43,13 +43,22 @@
             font-family: 'kohinoor-m';
             src: url('fonts/Kohinoor-Light.otf') format('opentype');
         }
+
+
+        .page-header,
+        .footer {
+            background: linear-gradient(rgb(100, 10, 38, 0.8), #2b0520), url(img/clg.png);
+            background-position: 25% 0%;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
     </style>
 </head>
 
 <body>
 
     <!-- Page - loader start-->
-    <div id="loader" class="loader orange-color">
+    <!-- <div id="loader" class="loader orange-color">
         <div class="loader-container">
             <div class='loader-icon'>
                 <img src="img/loader.png" alt="">
@@ -60,7 +69,7 @@
                 </script>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Page - loader end -->
 
     <!-- Navbar Start -->
@@ -78,10 +87,11 @@
                     <a href="Schedule.html" class="nav-item nav-link">Schedule</a>
                     <a href="Guidelines.html" class="nav-item nav-link">Guidelines</a>
                     <a href="StudentCorner.html" class="nav-item nav-link">Student Corner</a>
-                    <a href="#" class="nav-item nav-link active" data-toggle="modal" data-target="#staticBackdrop">Stories</a>
+                    <a href="Stories.html" class="nav-item nav-link active">Stories</a>
                     <a href="ConvoSong.html" class="nav-item nav-link">Convo Song</a>
-                    <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#staticBackdrop" >Brochure</a>
-                    <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#staticBackdrop1">Make a Gift</a>
+                    <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#staticBackdrop">Brochure</a>
+                    <a href="#" class="nav-item nav-link" data-toggle="modal" data-target="#staticBackdrop1">Make a
+                        Gift</a>
                 </div>
             </div>
         </nav>
@@ -92,11 +102,11 @@
     <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
         <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5"
             style="min-height: 400px">
-            
+
             <!-- floating gradcap -->
             <div class="float-area">
                 <img src="img/goldengradcap.png" class="floating-img" alt="my floating image">
-                <br/>
+                <br />
                 <span></span>
             </div>
 
@@ -113,65 +123,536 @@
     </div>
 
     <div class="stories">
+        <!-- Tharun S -->
         <div class="card1">
-            <div class="card1__thumb"><img class="animate" src="img/Stories/1.png"></div>
+            <div class="card1__thumb"><img class="animate" src="img/Stories/Tharun.png"></div>
             <div class="card1__content">
-              <h2 class="card1__title animate"><a href="#">Card Title</a></h2>
-              <p class="card1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium tenetur</p>
-              <button class="card1__btn">Read More</button>
+                <h2 class="card1__title animate">Tharun S</h2>
+                <p class="card1__text">
+                    I would like to thank the committee that decided to relax the bachelor's degree (course) criteria
+                    for admission to M.Tech. CSE. From scrambling to finding the institutes considering electrical
+                    background as well for a Master's in CSE to securing a Gold medal for excellent academic
+                    performance, IIIT-Delhi accepted me with open arms and transformed me for the better. It was COVID
+                    season since the day I joined, so it was all remote. IIIT-Delhi boasting itself to be a research-led
+                    Institute, made me focus more on fundamental academic aspects rather than job-related aspects. I
+                    started ambitiously on a project worthy of being published in a research conference that could be
+                    done within the first semester, and reality hit at the end of the first semester. Then I slowly
+                    started my research exploration through LCS2 in my second semester. I chose to do all - Thesis,
+                    taking the full 20 credits in the second semester, studying Advanced Machine Learning, pursuing AI
+                    specialization, taking an SSH course, try my hands on an online IS (NPTEL) course. IIIT-Delhi gave
+                    me the scope for my limits, and I pushed them through, and I am happy for every inch of it. If, at
+                    all, my hard choices may have led me not to excel grade-wise, I would have still been the most
+                    content with my choices. Because what I learned through them is much more valuable. Last but not the
+                    least are the bunch of my friends whom I met on campus in a short span of 2-3 months. They are the
+                    sweetest, and my heart yearns to bond more with them. Thanks for the incredible time and support!
+                </p>
+                <button class="card1__btn" data-toggle="modal" data-target="#exampleModalLong">Read More</button>
             </div>
-          </div>
-          <div class="card1">
-            <div class="card1__thumb"><img class="animate" src="img/Stories/2.png"></div>
+        </div>
+
+        <!-- Krishan Gupta -->
+        <div class="card1">
+            <div class="card1__thumb"><img class="animate" src="img/Stories/Krishnan.png"></div>
             <div class="card1__content">
-              <h2 class="card1__title animate"><a href="#">Card Title</a></h2>
-              <p class="card1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium tenetur</p>
-              <button class="card1__btn">Read More</button>
+                <h2 class="card1__title animate">Krishan Gupta</h2>
+                <p class="card1__text">
+                    Five years at IIIT-Delhi was a great experience in all aspects. It was full of challenging tasks,
+                    teaching assistant responsibilities, other curricular activities, and ups and downs. In addition,
+                    tours, sports, gym, yoga, and walking around campus with friends and supervisors enriched my
+                    experience.
+
+                    The first year passed in finding supervisors and coursework. Picking up supervisors was the most
+                    challenging task for me, but eventually, at the end of the first year, I got my first supervisor.
+                    Finally, I signed with three supervisors during my Ph.D. journey. Beyond these, I started sports
+                    activities and tours with friends; I played table tennis for the first time in my life, and it
+                    became my favorite game.
+
+                </p>
+                <button class="card1__btn" data-toggle="modal" data-target="#exampleModalLong1">Read More</button>
             </div>
-          </div>
-          <div class="card1">
-            <div class="card1__thumb"><img class="animate" src="img/Stories/3.png"></div>
+        </div>
+
+        <!-- Ramneek Kaur -->
+        <div class="card1">
+            <div class="card1__thumb"><img class="animate" src="img/Stories/Ramneek.png"></div>
             <div class="card1__content">
-              <h2 class="card1__title animate"><a href="#">Card Title</a></h2>
-              <p class="card1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium tenetur</p>
-              <button class="card1__btn">Read More</button>
+                <h2 class="card1__title animate">Ramneek Kaur</h2>
+                <p class="card1__text">
+                    My journey at IIIT-Delhi was a great learning experience, and it was multifold. What I like the most
+                    about the Institute is its vibrant and open-minded culture regarding student life, academics, and
+                    research. The faculty is outstanding, and the students have access to the latest infrastructure and
+                    resources.
+                </p>
+                <button class="card1__btn" data-toggle="modal" data-target="#exampleModalLong2">Read More</button>
             </div>
-          </div>
-          <div class="card1">
-            <div class="card1__thumb"><img class="animate" src="img/Stories/4.png"></div>
+        </div>
+
+        <!-- Neelam. Sharma -->
+        <div class="card1">
+            <div class="card1__thumb"><img class="animate" src="img/Stories/Neelam.png"></div>
             <div class="card1__content">
-              <h2 class="card1__title animate"><a href="#">Card Title</a></h2>
-              <p class="card1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium tenetur</p>
-              <button class="card1__btn">Read More</button>
+                <h2 class="card1__title animate">Neelam Sharma</h2>
+                <p class="card1__text">
+                    I had a wonderful time at IIIT-Delhi. The journey was an absolute thrill ride. I had many amazing
+                    experiences, met incredible people, and made lifelong friends. Transitioning from a Wet Lab
+                    (Biotechnology) to a Dry Lab (Computational Biology) was difficult. Still, with perseverance and a
+                    never-say-die attitude, I completed my Ph.D., which would not have been possible without the help of
+                    my friends, family, and many people at IIIT-Delhi. I'd like to express my heartfelt gratitude to Mr.
+                    Khushpinder Sharma and Dr. Amita Puri for their unwavering support, bringing me out of my
+                    depression, dealing with my panic attacks, and patiently listening to me. They both made my journey
+                    much easier and helped me regain my confidence. In the last five and a half years, I've evolved into
+                    a confident unwavering optimist who believes there is no such thing as failure, only feedback. I am
+                    looking forward to convocation day after years of hard work. I'd like to thank the entire IIIT-Delhi
+                    family for their contributions and support over the years.
+                </p>
+                <button class="card1__btn" data-toggle="modal" data-target="#exampleModalLong3">Read More</button>
             </div>
-          </div>
-          <div class="card1">
-            <div class="card1__thumb"><img class="animate" src="img/Stories/5.png"></div>
+        </div>
+
+        <!-- Sathish V -->
+        <div class="card1">
+            <div class="card1__thumb"><img class="animate" src="img/Stories/Satish.png"></div>
             <div class="card1__content">
-              <h2 class="card1__title animate"><a href="#">Card Title</a></h2>
-              <p class="card1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium tenetur</p>
-              <button class="card1__btn">Read More</button>
+                <h2 class="card1__title animate">Sathish V</h2>
+                <p class="card1__text">
+                    My sincere thanks to my academic supervisors, faculty, staff, and students who helped me succeed in
+                    the doctoral program's academic rigor. I joined the Ph.D. program at 39 as a sponsored candidate.
+                    When I was in the classroom with 20-year-olds, I did raise the average age a bit. As a graduate
+                    student, I never found the age gap challenging. My professors never treated me as anything but
+                    another student, and the other students were also great to me. The toughest part for me was the
+                    transition from a demanding corporate environment to a rigorous academic environment. I approached
+                    the Ph.D. program as a learning process to challenge myself intellectually and emotionally. I have
+                    pleasant memories garnered throughout my Ph.D. journey that will be cherished for the rest of my
+                    life.
+                </p>
+                <button class="card1__btn" data-toggle="modal" data-target="#exampleModalLong4">Read More</button>
             </div>
-          </div>
-          <div class="card1">
-            <div class="card1__thumb"><img class="animate" src="img/Stories/6.png"></div>
+        </div>
+        <!-- Lakshya A Agrawal -->
+        <div class="card1">
+            <div class="card1__thumb"><img class="animate" src="img/Stories/Lakshya.png"></div>
             <div class="card1__content">
-              <h2 class="card1__title animate"><a href="#">Card Title</a></h2>
-              <p class="card1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium tenetur</p>
-              <button class="card1__btn">Read More</button>
+                <h2 class="card1__title animate">Lakshya A Agrawal</h2>
+                <p class="card1__text">
+                    I am extremely grateful for the wonderful experiences I have gained during my tenure at IIIT-Delhi.
+                    The most impactful factor for me has been the great people at the Institute. I am forever indebted
+                    to the amazing mentors and guides that I got, be it the seniors, faculty, and friends, all of whom
+                    were always helpful and critical for whatever I have been able to achieve. I was blessed with the
+                    best set of friends, who would
+                </p>
+                <button class="card1__btn" data-toggle="modal" data-target="#exampleModalLong4">Read More</button>
             </div>
-          </div>
-          <div class="card1">
-            <div class="card1__thumb"><img class="animate" src="img/Stories/7.png"></div>
+        </div>
+
+        <!-- Arnav Tandon -->
+        <div class="card1">
+            <div class="card1__thumb"><img class="animate" src="img/Stories/Arnav.png"></div>
             <div class="card1__content">
-              <h2 class="card1__title animate"><a href="#">Card Title</a></h2>
-              <p class="card1__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum veritatis eaque necessitatibus, explicabo vero hic, perspiciatis unde minus error consectetur, quos sunt officiis ad repellendus pariatur eligendi tempora praesentium tenetur</p>
-              <button class="card1__btn">Read More</button>
+                <h2 class="card1__title animate">Arnav Tandon</h2>
+                <p class="card1__text">
+                    IIIT-Delhi has introduced me to the best set of people one can hope for. I am grateful to this
+                    institution for all the opportunities and its people for their tireless support and mentorship.
+                    There was always so much to do and never enough time.
+                    To the batch of 2018, it was a rollercoaster ride, and we sailed through it!
+                </p>
+                <button class="card1__btn" data-toggle="modal" data-target="#exampleModalLong6">Read More</button>
             </div>
-          </div>
-      </div>
+        </div>
+
+        <!-- Shubhi Singhal -->
+        <div class="card1">
+            <div class="card1__thumb"><img class="animate" src="img/Stories/Shubi.png"></div>
+            <div class="card1__content">
+                <h2 class="card1__title animate">Shubhi Singhal</h2>
+                <p class="card1__text">
+                    4 years at IIIT-Delhi!!! On one thought, it seems like a vast time, while on the other, it seems to
+                    have passed very quickly.
+                    From the first to the last day of college, I've had many experiences that have changed me in various
+                    ways and molded me into my current version. One thing I'm grateful to the Institute is the world of
+                    technology, knowledge, and opportunities it opened for me, which in turn gave me the confidence to
+                    spread my wings and explore this beautiful world!
+
+                    There are a whole lot of things that a person experiences during this phase of their life. Meeting
+                    new people and being in a new environment gives you a different kind of exposure which helps you
+                    learn about life. At times, it becomes overwhelming to be in such a competitive environment where
+                    everyone is working so hard. Still, it's essential not to get bothered about all this and to believe
+                    in yourself and focus on what matters to you. Everyone is unique in their way. Apart from academics,
+                    it is also important to explore different things. Not just the academic and external side of yours,
+                    but one may also learn how to manage themselves internally. And this is an essential life skill that
+                    may also help you to go through not-so-great phases of life.
+                </p>
+                <button class="card1__btn" data-toggle="modal" data-target="#exampleModalLong7">Read More</button>
+            </div>
+        </div>
+
+        <!-- Ruhma Mehek Khan -->
+        <div class="card1">
+            <div class="card1__thumb"><img class="animate" src="img/Stories/Ruhma.png"></div>
+            <div class="card1__content">
+                <h2 class="card1__title animate">Ruhma Mehek Khan</h2>
+                <p class="card1__text">
+                    “What next?” was a terrifying question for me after graduating high school. It was time for me to
+                    choose my career path and make a crucial life decision. While exploring courses to pursue my
+                    undergrad, I came across the BTech in Computer Science and Social Science program offered at
+                    IIIT-Delhi. Sure I had my inhibitions and fears, it wasn't a well-established program back then, and
+                    there were no alumni to discuss the curriculum or career paths with. Despite all of this, the moment
+                    I read about this course, I knew it was what I wanted to pursue!
+
+                    I took the onus to make the best of this amazing opportunity and enrolled in the program. Looking
+                    back, it was a risk I took, but it bore great results, and I am glad I took the leap of faith.
+
+                    My four years at IIIT-Delhi were transformational in more than one way. Academically, I tried out a
+                    variety of courses, took up research projects in different domains, worked under the guidance of
+                    some exemplary professors, and was lucky to secure some amazing scholarships and internships. But
+                    more importantly, I grew as a person. College life is where you are encouraged to make decisions,
+                    make mistakes and learn from them. It is a time to explore not only your career goals but also
+                    yourself! And that is something that I am always going to be grateful for.
+
+                    The extracurricular activities in college made me a better leader. They taught me how to communicate
+                    and manage my time better, think on my feet, make decisions on the go, and, most importantly, be
+                    confident. I feel each of these skills is as important, if not more, than the knowledge I gained
+                    from my courses and projects.
+
+                    However, the one thing that I am most grateful to IIIT-Delhi for is the people I've met here. I made
+                    bonds for a lifetime, be it my professors whom I still approach for advice or my friends who,
+                    throughout the four years of my college life, pushed me to do better, appreciated me for my
+                    achievements, and supported me in my low days.
+
+                    Thank you, IIITD, for all the memories; you will always be fondly remembered.
+                </p>
+                <button class="card1__btn" data-toggle="modal" data-target="#exampleModalLong8">Read More</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modals -->
+
+    <!-- Tharun S -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Tharun S</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <hr style="border: none;">
+                    I would like to thank the committee that decided to relax the bachelor's degree (course) criteria
+                    for admission to M.Tech. CSE. From scrambling to finding the institutes considering electrical
+                    background as well for a Master's in CSE to securing a Gold medal for excellent academic
+                    performance, IIIT-Delhi accepted me with open arms and transformed me for the better.
+                    <hr style="border: none;">
+                    It was COVID season since the day I joined, so it was all remote. IIIT-Delhi boasting itself to be a
+                    research-led Institute, made me focus more on fundamental academic aspects rather than job-related
+                    aspects. I started ambitiously on a project worthy of being published in a research conference that
+                    could be done within the first semester, and reality hit at the end of the first semester. Then I
+                    slowly started my research exploration through LCS2 in my second semester. I chose to do all -
+                    Thesis, taking the full 20 credits in the second semester, studying Advanced Machine Learning,
+                    pursuing AI specialization, taking an SSH course, try my hands on an online IS (NPTEL) course.
+                    <hr style="border: none;">
+                    IIIT-Delhi gave me the scope for my limits, and I pushed them through, and I am happy for every inch
+                    of it. If, at all, my hard choices may have led me not to excel grade-wise, I would have still been
+                    the most content with my choices. Because what I learned through them is much more valuable. Last
+                    but not the least are the bunch of my friends whom I met on campus in a short span of 2-3 months.
+                    They are the sweetest, and my heart yearns to bond more with them. Thanks for the incredible time
+                    and support!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Krishan Gupta -->
+    <div class="modal fade" id="exampleModalLong1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle1"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle1">Krishan Gupta</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Five years at IIIT-Delhi was a great experience in all aspects. It was full of challenging tasks,
+                    teaching assistant responsibilities, other curricular activities, and ups and downs. In addition,
+                    tours, sports, gym, yoga, and walking around campus with friends and supervisors enriched my
+                    experience.
+                    <hr style="border: none;">
+                    The first year passed in finding supervisors and coursework. Picking up supervisors was the most
+                    challenging task for me, but eventually, at the end of the first year, I got my first supervisor.
+                    Finally, I signed with three supervisors during my Ph.D. journey. Beyond these, I started sports
+                    activities and tours with friends; I played table tennis for the first time in my life, and it
+                    became my favorite game.
+
+                    <hr style="border: none;">
+                    During the second year, I started participating in other curricular activities and learned teamwork
+                    as a member of various committees. In addition, I got the enormous opportunity to be a secretary for
+                    the Research Showcase, which led me to experience and learn a great combination of leadership and
+                    teamwork. On the curricular end, I started to work in a new discipline (Computational Biology
+                    without knowing B of Biology) and learned a lot. Finally, Data Science and Computational Biology
+                    have become my primary areas of research interest. At the end of the second year, I presented an
+                    article at the conference that was the first published article of my Ph.D. journey.
+                    <hr style="border: none;">
+                    The third year was full of internships, workshops, research showcases, collaborations, and visiting
+                    Professors'office. I also started learning to swim to overcome my water phobia, which was a great
+                    experience with swimming trainers. As a result, I finally got to know various swimming styles.
+                    Furthermore, until the end of the third year, I made multiple tours with friends, covering almost
+                    half the states of India for the first time. Among these, Sikkim was the best experiencefor me, with
+                    minus 10 degrees of temperature and climbing mountains with height phobia.
+                    <hr style="border: none;">
+                    I gave my first invited talk and experienced teaching skills in the fourth year. Then the COVID-19
+                    pandemic came, and I started to work from home. During this time, I got to start publishing the work
+                    of my dissertation. Frequently meeting online enabled me to publish my first paperon covidwithin
+                    four months of starting the project. Then came a day in September when I gave and passed my
+                    comprehensive examination.
+
+                    <hr style="border: none;">
+                    My last year at IIIT-Delhi was full of writing my dissertation and papers. However, the most
+                    beautiful experience during this year was getting a job at Harvard Medical school. I started
+                    applying for a postdoc position in March and got an offer in the same month, which was beyond my
+                    expectation. I accepted the postdoc offer, which led to me going out of India for the first time.
+                    Finally, I defended my dissertation at the end of last year.
+                    <hr style="border: none;">
+                    These experiences enhanced my knowledge, presentation skills, public speaking skills, teamworking
+                    abilities, leadership, and fitness.
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ramneek Kaur -->
+    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle2"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle2">Ramneek Kaur</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    My journey at IIIT-Delhi was a great learning experience, and it was multifold. What I like the most
+                    about the Institute is its vibrant and open-minded culture regarding student life, academics, and
+                    research. The faculty is outstanding, and the students have access to the latest infrastructure and
+                    resources.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Neelam. Sharma -->
+    <div class="modal fade" id="exampleModalLong3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle3"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle3">Neelam Sharma</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    I had a wonderful time at IIIT-Delhi. The journey was an absolute thrill ride. I had many amazing
+                    experiences, met incredible people, and made lifelong friends. Transitioning from a Wet Lab
+                    (Biotechnology) to a Dry Lab (Computational Biology) was difficult. Still, with perseverance and a
+                    never-say-die attitude, I completed my Ph.D., which would not have been possible without the help of
+                    my friends, family, and many people at IIIT-Delhi. I'd like to express my heartfelt gratitude to Mr.
+                    Khushpinder Sharma and Dr. Amita Puri for their unwavering support, bringing me out of my
+                    depression, dealing with my panic attacks, and patiently listening to me. They both made my journey
+                    much easier and helped me regain my confidence. In the last five and a half years, I've evolved into
+                    a confident unwavering optimist who believes there is no such thing as failure, only feedback. I am
+                    looking forward to convocation day after years of hard work. I'd like to thank the entire IIIT-Delhi
+                    family for their contributions and support over the years.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sathish V -->
+    <div class="modal fade" id="exampleModalLong4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle4"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle4">Sathish V</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    My sincere thanks to my academic supervisors, faculty, staff, and students who helped me succeed in
+                    the doctoral program's academic rigor. I joined the Ph.D. program at 39 as a sponsored candidate.
+                    When I was in the classroom with 20-year-olds, I did raise the average age a bit. As a graduate
+                    student, I never found the age gap challenging. My professors never treated me as anything but
+                    another student, and the other students were also great to me. The toughest part for me was the
+                    transition from a demanding corporate environment to a rigorous academic environment. I approached
+                    the Ph.D. program as a learning process to challenge myself intellectually and emotionally. I have
+                    pleasant memories garnered throughout my Ph.D. journey that will be cherished for the rest of my
+                    life.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lakshya A Agrawal -->
+    <div class="modal fade" id="exampleModalLong5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle5"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle5">Lakshya A Agrawal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    I am extremely grateful for the wonderful experiences I have gained during my tenure at IIIT-Delhi.
+                    The most impactful factor for me has been the great people at the Institute. I am forever indebted
+                    to the amazing mentors and guides that I got, be it the seniors, faculty, and friends, all of whom
+                    were always helpful and critical for whatever I have been able to achieve. I was blessed with the
+                    best set of friends, who would always support me, the best set of seniors, who would guide me to
+                    face any and every situation heads on, and amazing faculty, many of whom spent hours guiding me, be
+                    it on the technical side of things or general guidance.
+                    <hr style="border: none;">
+                    IIIT-Delhi is a place filled with energy. Day after day, seeing the campus filled with people
+                    pursuing every activity imaginable and excelling at it motivated me to work continuously. I cannot
+                    thank the institute and the people who make the institute enough for everything I have achieved.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Arnav Tandon -->
+    <div class="modal fade" id="exampleModalLong6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle6"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle6">Arnav Tandon</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    IIIT-Delhi has introduced me to the best set of people one can hope for. I am grateful to this
+                    institution for all the opportunities and its people for their tireless support and mentorship.
+                    There was always so much to do and never enough time.
+                    To the batch of 2018, it was a rollercoaster ride, and we sailed through it!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shubhi Singhal -->
+    <div class="modal fade" id="exampleModalLong7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle7"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle7">Shubhi Singhal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    4 years at IIIT-Delhi!!! On one thought, it seems like a vast time, while on the other, it seems to
+                    have passed very quickly.
+                    From the first to the last day of college, I've had many experiences that have changed me in various
+                    ways and molded me into my current version. One thing I'm grateful to the Institute is the world of
+                    technology, knowledge, and opportunities it opened for me, which in turn gave me the confidence to
+                    spread my wings and explore this beautiful world!
+                    <hr style="border: none;">
+                    There are a whole lot of things that a person experiences during this phase of their life. Meeting
+                    new people and being in a new environment gives you a different kind of exposure which helps you
+                    learn about life. At times, it becomes overwhelming to be in such a competitive environment where
+                    everyone is working so hard. Still, it's essential not to get bothered about all this and to believe
+                    in yourself and focus on what matters to you. Everyone is unique in their way. Apart from academics,
+                    it is also important to explore different things. Not just the academic and external side of yours,
+                    but one may also learn how to manage themselves internally. And this is an essential life skill that
+                    may also help you to go through not-so-great phases of life.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ruhma Mehek Khan -->
+    <div class="modal fade" id="exampleModalLong8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle8"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle8">Ruhma Mehek Khan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    “What next?” was a terrifying question for me after graduating high school. It was time for me to
+                    choose my career path and make a crucial life decision. While exploring courses to pursue my
+                    undergrad, I came across the BTech in Computer Science and Social Science program offered at
+                    IIIT-Delhi. Sure I had my inhibitions and fears, it wasn't a well-established program back then, and
+                    there were no alumni to discuss the curriculum or career paths with. Despite all of this, the moment
+                    I read about this course, I knew it was what I wanted to pursue!
+                    <hr style="border: none;">
+                    I took the onus to make the best of this amazing opportunity and enrolled in the program. Looking
+                    back, it was a risk I took, but it bore great results, and I am glad I took the leap of faith.
+                    <hr style="border: none;">
+                    My four years at IIIT-Delhi were transformational in more than one way. Academically, I tried out a
+                    variety of courses, took up research projects in different domains, worked under the guidance of
+                    some exemplary professors, and was lucky to secure some amazing scholarships and internships. But
+                    more importantly, I grew as a person. College life is where you are encouraged to make decisions,
+                    make mistakes and learn from them. It is a time to explore not only your career goals but also
+                    yourself! And that is something that I am always going to be grateful for.
+                    <hr style="border: none;">
+                    The extracurricular activities in college made me a better leader. They taught me how to communicate
+                    and manage my time better, think on my feet, make decisions on the go, and, most importantly, be
+                    confident. I feel each of these skills is as important, if not more, than the knowledge I gained
+                    from my courses and projects.
+                    <hr style="border: none;">
+                    However, the one thing that I am most grateful to IIIT-Delhi for is the people I've met here. I made
+                    bonds for a lifetime, be it my professors whom I still approach for advice or my friends who,
+                    throughout the four years of my college life, pushed me to do better, appreciated me for my
+                    achievements, and supported me in my low days.
+                    <hr style="border: none;">
+                    Thank you, IIITD, for all the memories; you will always be fondly remembered.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Stories End -->
-    
+
     <!-- Parallax Gallery Start -->
     <div class="section">
         <h1 class="display-4 text-center text-uppercase">Gallery</h1>
@@ -185,55 +666,55 @@
                         <img src="img/Gallery/1.jpg" alt="">
                     </a>
                 </div>
-    
+
                 <div class="img-wrapper faster">
                     <a href="" target="_blank" rel="noopener">
                         <img src="img/Gallery/2.jpg" alt="">
                     </a>
                 </div>
-    
+
                 <div class="img-wrapper slower vertical">
                     <a href="" target="_blank" rel="noopener">
                         <img src="img/Gallery/3.jpg" alt="">
                     </a>
                 </div>
-    
+
                 <div class="img-wrapper slower slower-down">
                     <a href="" target="_blank" rel="noopener">
                         <img src="img/Gallery/4.jpg" alt="">
                     </a>
                 </div>
-    
+
                 <div class="img-wrapper">
                     <a href="" target="_blank" rel="noopener">
                         <img src="img/Gallery/5.jpg" alt="">
                     </a>
                 </div>
-    
+
                 <div class="img-wrapper slower">
                     <a href="" target="_blank" rel="noopener">
                         <img src="img/Gallery/6.jpg" alt="">
                     </a>
                 </div>
-    
+
                 <div class="img-wrapper faster1">
                     <a href="" target="_blank" rel="noopener">
                         <img src="img/Gallery/7.jpg" alt="">
                     </a>
                 </div>
-    
+
                 <div class="img-wrapper slower slower2">
                     <a href="" target="_blank" rel="noopener">
                         <img src="img/Gallery/8.jpg" alt="">
                     </a>
                 </div>
-    
+
                 <div class="img-wrapper">
                     <a href="" target="_blank" rel="noopener">
                         <img src="img/Gallery/9.jpg" alt="">
                     </a>
                 </div>
-    
+
                 <div class="img-wrapper slower">
                     <a href="" target="_blank" rel="noopener">
                         <img src="img/Gallery/10.jpg" alt="">
@@ -256,19 +737,24 @@
             <div class="col-lg-3 col-md-6 mb-2">
                 <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
                 <div class="d-flex justify-content-start">
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank" href="https://twitter.com/IIITDelhi">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank"
+                        href="https://twitter.com/IIITDelhi">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank" href="https://facebook.com/IIITDelhi">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank"
+                        href="https://facebook.com/IIITDelhi">
                         <i class="fab fa-facebook"></i>
                     </a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank" href="https://www.youtube.com/channel/UCKnRN-9ht_uca8nIdhyTAtQ/videos">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank"
+                        href="https://www.youtube.com/channel/UCKnRN-9ht_uca8nIdhyTAtQ/videos">
                         <i class="fab fa-youtube"></i>
                     </a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank" href="https://www.linkedin.com/school/iiit-delhi/?originalSubdomain=in">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" target="_blank"
+                        href="https://www.linkedin.com/school/iiit-delhi/?originalSubdomain=in">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a class="btn btn-lg btn-outline-light btn-lg-square" target="_blank" href="https://www.instagram.com/iiit.delhi/">
+                    <a class="btn btn-lg btn-outline-light btn-lg-square" target="_blank"
+                        href="https://www.instagram.com/iiit.delhi/">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </div>
@@ -291,18 +777,19 @@
                 <div class="d-flex flex-column justify-content-start">
                     <a class="text-white mb-2" target="_blank" href="https://www.youtube.com/watch?v=DYxSAov-Kfs"><i
                             class="fa fa-angle-right mr-2"></i>Convocation 10</a>
-                    <a class="text-white mb-2" target="_blank" href="https://www.youtube.com/watch?v=EPv_dEhAKqA&t=1s"><i
+                    <a class="text-white mb-2" target="_blank"
+                        href="https://www.youtube.com/watch?v=EPv_dEhAKqA&t=1s"><i
                             class="fa fa-angle-right mr-2"></i>Convocation 9</a>
                     <a class="text-white mb-2" href="https://photos.app.goo.gl/HKKbAwZisSWiMKdq9"><i
                             class="fa fa-angle-right mr-2"></i>Convocation 8</a>
-                    <a class="text-white mb-2"
-                        target="_blank" href="https://photos.google.com/share/AF1QipO8n14o3cL4A5Mm3U4cjHMlQW2jW684ChVYCtYSIqGVb2bs0xz5Z9NBwI-tc2lLwA?key=V0ZQaWx4SWh3bHhlRUlTdm5tbWNnalZORGRCWVlB"><i
+                    <a class="text-white mb-2" target="_blank"
+                        href="https://photos.google.com/share/AF1QipO8n14o3cL4A5Mm3U4cjHMlQW2jW684ChVYCtYSIqGVb2bs0xz5Z9NBwI-tc2lLwA?key=V0ZQaWx4SWh3bHhlRUlTdm5tbWNnalZORGRCWVlB"><i
                             class="fa fa-angle-right mr-2"></i>Convocation 7</a>
-                    <a class="text-white mb-2"
-                        target="_blank" href="https://photos.google.com/share/AF1QipPR5dNTzGdIcg8GJ3OyeMz2_MLZUom9Zv1qy4UZCBrIzGoQ9h0DuShWnL1JI17Gkw?key=ZUhYdzNuenM1dlZodzBMQkRQNzZuV2lER2VaN2tB"><i
+                    <a class="text-white mb-2" target="_blank"
+                        href="https://photos.google.com/share/AF1QipPR5dNTzGdIcg8GJ3OyeMz2_MLZUom9Zv1qy4UZCBrIzGoQ9h0DuShWnL1JI17Gkw?key=ZUhYdzNuenM1dlZodzBMQkRQNzZuV2lER2VaN2tB"><i
                             class="fa fa-angle-right mr-2"></i>Convocation 6</a>
-                    <a class="text-white mb-2"
-                        target="_blank" href="https://photos.google.com/share/AF1QipPu5tvYHR17pfs8Jwa0Jh8Ua2KOXk1SfIsYzs0aruBbETe1DnbqlPSusAEZewj55w?key=aWw5YXAzc2duRHFndlNqTXFJRlJjT3VtOEZITnZn"><i
+                    <a class="text-white mb-2" target="_blank"
+                        href="https://photos.google.com/share/AF1QipPu5tvYHR17pfs8Jwa0Jh8Ua2KOXk1SfIsYzs0aruBbETe1DnbqlPSusAEZewj55w?key=aWw5YXAzc2duRHFndlNqTXFJRlJjT3VtOEZITnZn"><i
                             class="fa fa-angle-right mr-2"></i>Convocation 5</a>
                 </div>
             </div>
@@ -317,22 +804,23 @@
     <!-- Footer End -->
 
     <!-- Make a Gift Modal -->
-    <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+    <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel1">Disclaimer</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                You will be redirected to another website
-            </div>
-            <div class="modal-footer">
-                <a href="https://alumni.iiitd.ac.in/alumni_donations" class="btn btn-secondary">Continue</a>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-            </div>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel1">Disclaimer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    You will be redirected to another website
+                </div>
+                <div class="modal-footer">
+                    <a href="https://alumni.iiitd.ac.in/alumni_donations" class="btn btn-secondary">Continue</a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>

@@ -70,7 +70,7 @@ const sportsBlockMarker = L.marker([28.547539, 77.272337], { icon: sportsBlock }
 // Popup
 let sportsBlock1 = `<h3>Sports Complex</h3>
 <div style="text-align:center">
-    <img width="150" height="150"src="img/map/sportsBlock.jpg"/>
+    <img width="150" height="150"src="img/Map/sportsBlock.jpg"/>
 </div>
 `
 sportsBlockMarker.bindPopup(sportsBlock1);

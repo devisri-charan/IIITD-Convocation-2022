@@ -9655,8 +9655,9 @@ h6,
 .page-header,
 .offer,
 .footer {
-  background: linear-gradient(#640a26, #2b0520), url(../img/clg.png);
-  background-position: top;
+  background: linear-gradient(rgb(100, 10, 38, 0.8), #2b0520),
+    url(../img/clg.png);
+  background-position: 25% 0%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
