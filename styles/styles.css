@@ -36,12 +36,13 @@
 
 /* :: card1 :: */
 .card1 {
-  max-width: 850px;
+  max-width: 900px;
   width: 95%;
   margin-inline: auto;
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 40px;
+  justify-items: center;
 }
 .card1__thumb {
   overflow: hidden;
@@ -97,7 +98,7 @@
 @media (min-width: 576px) {
   .card1 {
     grid-template-columns: auto minmax(100px, 470px) auto;
-    grid-template-rows: repeat(2, 1fr) auto auto;
+    /* grid-template-rows: repeat(2, 1fr) auto auto; */
   }
   .card1__thumb {
     max-width: 576px;
